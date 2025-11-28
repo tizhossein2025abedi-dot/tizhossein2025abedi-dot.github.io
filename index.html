@@ -117,6 +117,17 @@
             cursor: pointer;
         }
 
+        /* ویدیو */
+        .video-section {
+            margin-top: 40px;
+            padding: 40px 25px;
+            text-align: center;
+        }
+        .video-section h2 {
+            color: #4da3ff;
+            font-size: 2rem;
+        }
+
         /* واتساپ شناور */
         .whatsapp-float {
             position: fixed;
@@ -252,6 +263,15 @@
 
     </section>
 
+    <!-- ویدیو آپارات -->
+    <section class="video-section">
+        <h2>ویدیو معرفی دوره</h2>
+
+        <div id="87178512717">
+            <script type="text/JavaScript" src="https://www.aparat.com/embed/ocz75n3?data[rnddiv]=87178512717&data[responsive]=yes&recom=self"></script>
+        </div>
+    </section>
+
     <!-- واتساپ -->
     <a href="https://wa.me/989300565169" target="_blank" class="whatsapp-float">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
@@ -285,24 +305,20 @@
 <script>
 let selectedCourse = "";
 
-// باز کردن لیست دوره‌ها
 function openCourses() {
     document.getElementById("courses").scrollIntoView({ behavior: "smooth" });
 }
 
-// انتخاب دوره
 function selectCourse(name) {
     selectedCourse = name;
     document.getElementById("regModal").style.display = "block";
     document.getElementById("courseTitle").innerText = "ثبت‌نام در دوره: " + name;
 }
 
-// بستن مودال
 function closeModal() {
     document.getElementById("regModal").style.display = "none";
 }
 
-// ارسال به واتساپ
 function sendToWhatsApp() {
     let name = document.getElementById("nameInput").value;
     let phone = document.getElementById("phoneInput").value;
@@ -323,4 +339,5 @@ function sendToWhatsApp() {
 
 </body>
 </html>
+
 
