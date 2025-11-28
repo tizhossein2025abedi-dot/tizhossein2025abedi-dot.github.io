@@ -4,435 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>آتی نما - مرکز تخصصی آزمون‌های هوش و استعداد</title>
+
     <style>
-        /* فونت فارسی */
         @font-face {
             font-family: 'Vazirmatn';
             src: url('https://cdn.jsdelivr.net/gh/rastikerdar/Vazirmatn@v3000.1.0/dist/font-files/fonts/ttf/Vazirmatn-Regular.ttf') format('truetype');
             font-weight: 400;
         }
-        * {
-            box-sizing: border-box;
-            font-family: 'Vazirmatn', sans-serif;
-        }
+        * { box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }
+        body { margin: 0; padding: 0; background:#f4f7f9; color:#333; direction: rtl; }
 
-        /* استایل‌های عمومی و هدر */
-        body {
-            margin: 0;
-            padding: 0;
-            direction: rtl;
-            background-color: #f4f7f9;
-            color: #333;
-        }
-        .header {
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 10px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo-container img {
-            height: 50px; /* تنظیم ارتفاع لوگو */
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            margin-left: 25px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover {
-            color: #007bff;
-        }
-        .main-content {
-            padding: 40px;
-            text-align: center;
-        }
-        .hero-section h1 {
-            font-size: 2.5em;
-            color: #1a2a5a;
-            margin-bottom: 15px;
-        }
-        .hero-section p {
-            font-size: 1.2em;
-            color: #555;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        .cta-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 1.1em;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
+        .header { background:#fff; padding:10px 40px; box-shadow:0 2px 4px rgba(0,0,0,0.1); display:flex; justify-content:space-between; align-items:center; }
+        .logo-container img { height:50px; }
+        .nav-links a { text-decoration:none; color:#333; margin-left:25px; font-weight:500; }
+        .nav-links a:hover { color:#007bff; }
 
-        /* استایل بخش مهارت‌ها */
-        .skills-section {
-            padding: 60px 40px;
-            background-color: #e9ecef;
-        }
-        .skills-section h2 {
-            color: #1a2a5a;
-            margin-bottom: 40px;
-        }
-        .skills-grid {
-            display: flex;
-            justify-content: space-around;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .skill-item {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            flex-basis: calc(25% - 30px);
-            min-width: 200px;
-            text-align: center;
-        }
-        .skill-item h3 {
-            color: #007bff;
-            margin-top: 10px;
-        }
-        .icon {
-            font-size: 2.5em;
-            color: #ffc107;
-        }
+        .main-content { padding:40px; text-align:center; }
+        .hero-section h1 { font-size:2.5em; color:#1a2a5a; }
+        .hero-section p { font-size:1.2em; max-width:700px; margin:auto; color:#555; }
+        .cta-button { background:#007bff; color:#fff; padding:12px 30px; font-size:1.1em; border-radius:8px; cursor:pointer; border:none; }
+        .cta-button:hover { background:#0056b3; }
 
-        /* استایل فوتر */
-        .footer {
-            background-color: #343a40;
-            color: #adb5bd;
-            padding: 30px 40px;
-            text-align: center;
-            font-size: 0.9em;
-        }
-        .footer a {
-            color: #007bff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+        .skills-section { background:#e9ecef; padding:60px 40px; }
+        .skills-section h2 { color:#1a2a5a; }
+        .skills-grid { display:flex; justify-content:space-around; flex-wrap:wrap; gap:20px; }
+        .skill-item { background:white; padding:25px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.05); min-width:200px; flex-basis:calc(25% - 30px); text-align:center; }
+        .icon { font-size:2.5em; color:#ffc107; }
 
-        /* استایل مودال‌ها (پنجره‌های بازشونده) */
-        .modal {
-            display: none; /* پنهان به صورت پیش‌فرض */
-            position: fixed; 
-            z-index: 1000; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgba(0,0,0,0.5); /* پس‌زمینه تیره */
-        }
+        .footer { background:#343a40; color:#adb5bd; text-align:center; padding:30px; }
+        .footer a { color:#007bff; margin:0 10px; }
 
-        .modal-content {
-            background-color: #fefefe;
-            margin: 10% auto; /* 10% از بالا و وسط صفحه */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%; 
-            max-width: 600px;
-            border-radius: 10px;
-            position: relative;
-        }
+        /* مودال‌ها */
+        .modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); }
+        .modal-content { background:white; margin:7% auto; padding:20px; width:80%; max-width:600px; border-radius:10px; position:relative; }
+        .close-button { position:absolute; left:20px; top:15px; cursor:pointer; font-size:28px; color:#888; }
 
-        /* دکمه بستن (ضربدر) - برای هر دو مودال یکسان است اما در JS بر اساس اندیس تفکیک می‌شود */
-        .close-button {
-            color: #aaa;
-            float: left;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-            position: absolute; /* برای قرارگیری در گوشه */
-            left: 20px; /* به جای 20px در راست، 20px در چپ برای RTL */
-            top: 15px;
-        }
-        .close-button:hover,
-        .close-button:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        
-        /* استایل لیست دوره‌ها */
-        #coursesModal .modal-content {
-            max-width: 700px;
-        }
-        .course-list {
-            list-style: none;
-            padding: 0;
-        }
-        .course-item {
-            padding: 15px;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .course-item:last-child {
-            border-bottom: none;
-        }
-        .select-course {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .select-course:hover {
-            background-color: #218838;
-        }
+        .form-group { margin-bottom:15px; }
+        .form-group label { font-weight:bold; }
+        .form-group input { width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; }
 
-        /* استایل فرم ثبت‌نام */
-        #registrationModal .modal-content {
-            max-width: 500px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-            text-align: right;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="tel"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
         .registration-submit-btn {
-            width: 100%;
-            background-color: #ffc107;
-            color: #333;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1.1em;
-            font-weight: bold;
+            width:100%; background:#ffc107; border:none;
+            padding:12px; border-radius:5px; font-size:1.1em; cursor:pointer;
         }
-        .registration-submit-btn:hover {
-            background-color: #e0a800;
-        }
+        .registration-submit-btn:hover { background:#e0a800; }
     </style>
 </head>
 <body>
 
-    <!-- هدر -->
-    <div class="header">
-        <div class="logo-container">
-            <!-- فرض بر این است که لوگو آتی نما لگو.jpg در دسترس است -->
-            <img src="image_gen_95b660bd-9920-4b08-8632-a5bc5b1aac74_0.png" alt="لوگوی آتی نما">
-        </div>
-        <div class="nav-links">
-            <a href="#">خانه</a>
-            <a href="#" id="openCoursesModal">مشاهده دوره‌ها</a>
-            <a href="#">درباره ما</a>
-        </div>
+<!-- هدر -->
+<div class="header">
+    <div class="logo-container">
+        <img src="آتی نما لگو.jpg" alt="لوگو">
     </div>
+    <div class="nav-links">
+        <a href="#">خانه</a>
+        <a id="openCoursesModal" href="#">مشاهده دوره‌ها</a>
+        <a href="#">درباره ما</a>
+    </div>
+</div>
 
-    <!-- محتوای اصلی -->
-    <div class="main-content">
-        <div class="hero-section">
-            <h1>آتی نما: دروازه شما به سوی موفقیت در آزمون‌های تیزهوشان و مدارس برتر</h1>
-            <p>ما با رویکردی نوین و تخصصی، دانش‌آموزان را برای درخشش در چالش‌برانگیزترین آزمون‌های ورودی آماده می‌کنیم.</p>
-            <button class="cta-button" id="openCoursesModal2">همین حالا شروع کنید</button>
-        </div>
-        
-        <!-- بخش مهارت‌ها -->
-        <div class="skills-section">
-            <h2>چرا آتی نما؟</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <span class="icon">&#9733;</span>
-                    <h3>کلاس‌های تعاملی</h3>
-                    <p>آموزش پویا و پرسش و پاسخ زنده با اساتید مجرب.</p>
-                </div>
-                <div class="skill-item">
-                    <span class="icon">&#128218;</span>
-                    <h3>آزمون‌های شبیه‌ساز</h3>
-                    <p>ارزیابی دقیق عملکرد با آزمون‌هایی مطابق با استانداردهای اصلی.</p>
-                </div>
-                <div class="skill-item">
-                    <span class="icon">&#128221;</span>
-                    <h3>رصد پیشرفت</h3>
-                    <p>گزارش‌گیری مستمر و رصد دقیق نقاط قوت و ضعف هر دانش‌آموز.</p>
-                </div>
-                <div class="skill-item">
-                    <span class="icon">&#127970;</span>
-                    <h3>جزوات تألیفی</h3>
-                    <p>استفاده از منابع آموزشی اختصاصی و تالیف شده توسط تیم ما.</p>
-                </div>
+<!-- محتوای اصلی -->
+<div class="main-content">
+    <div class="hero-section">
+        <h1>آتی نما: دروازه موفقیت در تیزهوشان</h1>
+        <p>با آموزش‌های حرفه‌ای، آزمون‌های شبیه‌ساز، و برنامه‌ریزی تخصصی.</p>
+        <button id="openCoursesModal2" class="cta-button">شروع کنید</button>
+    </div>
+</div>
+
+<!-- فوتر -->
+<div class="footer">
+    <p>تماس: <a href="mailto:tizhossein2025abedi@gmail.com">ایمیل</a> | 
+       <a href="https://wa.me/989300565169">واتساپ: 09300565169</a></p>
+</div>
+
+<!-- مودال لیست دوره‌ها -->
+<div id="coursesModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>انتخاب دوره</h2>
+        <ul class="course-list">
+            <li>تیزهوشان ششم <button class="select-course" data-course="تیزهوشان ششم">انتخاب</button></li>
+            <li>تیزهوشان نهم <button class="select-course" data-course="تیزهوشان نهم">انتخاب</button></li>
+            <li>مدارس برتر <button class="select-course" data-course="مدارس برتر">انتخاب</button></li>
+        </ul>
+    </div>
+</div>
+
+<!-- مودال فرم ثبت‌نام -->
+<div id="registrationModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3 id="formTitle">ثبت‌نام در دوره</h3>
+
+        <form id="regForm" onsubmit="event.preventDefault(); sendToWhatsApp();">
+            <div class="form-group">
+                <label>نام و نام خانوادگی</label>
+                <input id="fname" required>
             </div>
-        </div>
+
+            <div class="form-group">
+                <label>شماره تماس</label>
+                <input id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label>ایمیل (اختیاری)</label>
+                <input id="email">
+            </div>
+
+            <button class="registration-submit-btn">ارسال اطلاعات</button>
+        </form>
     </div>
+</div>
 
-    <!-- فوتر -->
-    <div class="footer">
-        <p>&copy; 2024 آتی نما. تمامی حقوق محفوظ است.</p>
-        <p>تماس با ما: 
-            <a href="tizhossein2025abedi@gmail.com">ایمیل</a> | 
-            <a href="https://wa.me/989300565169">واتساپ: 09300565169</a>
+<script>
+let selectedCourse = "";
 
-        </p>
-    </div>
+// باز کردن مودال دوره‌ها
+document.getElementById("openCoursesModal").onclick =
+document.getElementById("openCoursesModal2").onclick = function() {
+    document.getElementById("coursesModal").style.display = "block";
+};
 
-    <!-- مودال لیست دوره‌ها -->
-    <div id="coursesModal" class="modal">
-        <div class="modal-content">
-            <!-- دکمه بستن (اندیس 0) -->
-            <span class="close-button">&times;</span> 
-            <h2>دوره‌های آموزشی آتی نما</h2>
-            <ul class="course-list">
-                <li class="course-item">
-                    <span>دوره جامع تیزهوشان ششم</span>
-                    <button class="select-course" data-course-name="تیزهوشان ششم">انتخاب</button>
-                </li>
-                <li class="course-item">
-                    <span>دوره جامع تیزهوشان نهم</span>
-                    <button class="select-course" data-course-name="هوش تصویری">انتخاب</button>
-                </li>
-                <li class="course-item">
-                    <span>دوره آمادگی مدارس برتر (نمونه/فرزانگان)</span>
-                    <button class="select-course" data-course-name="مدارس برتر">انتخاب</button>
-                </li>
-                <li class="course-item">
-                    <span>مشاوره فردی و برنامه‌ریزی تحصیلی</span>
-                    <button class="select-course" data-course-name="مشاوره فردی">انتخاب</button>
-                </li>
-            </ul>
-        </div>
-    </div>
+// انتخاب دوره
+document.querySelectorAll(".select-course").forEach(btn => {
+    btn.onclick = function() {
+        selectedCourse = this.dataset.course;
+        document.getElementById("coursesModal").style.display = "none";
+        document.getElementById("registrationModal").style.display = "block";
+        document.getElementById("formTitle").innerText = "ثبت‌نام در دوره: " + selectedCourse;
+    };
+});
 
-    <!-- مودال فرم ثبت‌نام -->
-    <div id="registrationModal" class="modal">
-        <div class="modal-content">
-            <!-- دکمه بستن (اندیس 1) -->
-            <span class="close-button">&times;</span>
-            <h3 id="registrationTitle">ثبت‌نام در دوره: [نام دوره]</h3>
-            <p>دوره انتخابی: <strong id="selectedCourseName"></strong></p>
-            
-            <form onsubmit="event.preventDefault(); submitRegistration();">
-                <div class="form-group">
-                    <label for="fname">نام و نام خانوادگی:</label>
-                    <input type="text" id="fname" name="fname" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">شماره تماس (برای پیگیری):</label>
-                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,11}">
-                </div>
-                <div class="form-group">
-                    <label for="email">ایمیل (اختیاری):</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                
-                <button type="submit" class="registration-submit-btn">تأیید و ارسال اطلاعات</button>
-            </form>
-        </div>
-    </div>
+// بستن مودال
+document.querySelectorAll(".close-button").forEach(btn => {
+    btn.onclick = function() {
+        this.parentElement.parentElement.style.display = "none";
+    };
+});
 
-    <!-- جاوا اسکریپت نهایی -->
-    <script>
-        // ** مدیریت Modal لیست دوره‌ها (Courses Modal) **
-        var coursesModal = document.getElementById("coursesModal");
-        var btn = document.getElementById("openCoursesModal");
-        var btn2 = document.getElementById("openCoursesModal2"); // اضافه شده برای دکمه CTA اصلی
-        // اولین عنصر .close-button برای مودال لیست دوره‌ها است
-        var closeCourseSpan = coursesModal.getElementsByClassName("close-button")[0];
+// ارسال به واتساپ
+function sendToWhatsApp() {
+    let name = document.getElementById("fname").value;
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
 
-        // باز کردن لیست دوره‌ها
-        btn.onclick = function() {
-            coursesModal.style.display = "block";
-        }
-        btn2.onclick = function() {
-            coursesModal.style.display = "block";
-        }
+    let msg =
+`سلام، یک ثبت‌نام جدید دریافت شد:
 
-        // بستن لیست دوره‌ها (ضربدر اول)
-        closeCourseSpan.onclick = function() {
-            coursesModal.style.display = "none";
-        }
+نام: ${name}
+شماره: ${phone}
+ایمیل: ${email}
+دوره انتخابی: ${selectedCourse}`;
 
-        // ** مدیریت Modal فرم ثبت‌نام (Registration Modal) **
-        var registrationModal = document.getElementById("registrationModal");
-        // دومین عنصر .close-button برای مودال فرم ثبت‌نام است. **(اصلاح شده)**
-        var closeRegistrationSpan = registrationModal.getElementsByClassName("close-button")[1];
-        var allSelectButtons = document.querySelectorAll('.select-course');
-        var selectedCourseNameEl = document.getElementById('selectedCourseName');
-        var registrationTitleEl = document.getElementById('registrationTitle');
+    let url = "https://wa.me/989300565169?text=" + encodeURIComponent(msg);
 
-        // تابع برای باز کردن فرم ثبت‌نام
-        function openRegistrationForm(courseName) {
-            selectedCourseNameEl.textContent = courseName;
-            registrationTitleEl.textContent = "ثبت‌نام در دوره: " + courseName;
-            // مخفی کردن لیست دوره‌ها و نمایش فرم ثبت‌نام
-            coursesModal.style.display = "none";
-            registrationModal.style.display = "block";
-        }
+    window.open(url, "_blank");
+}
+</script>
 
-        // اتصال توابع به دکمه‌های ثبت‌نام در لیست
-        allSelectButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                var courseName = this.getAttribute('data-course-name');
-                openRegistrationForm(courseName);
-            });
-        });
-
-        // بستن فرم ثبت‌نام (ضربدر دوم) - **اکنون باید کار کند**
-        closeRegistrationSpan.onclick = function() {
-            registrationModal.style.display = "none";
-        }
-
-        // بستن فرم ثبت‌نام (کلیک بیرون)
-        window.onclick = function(event) {
-            if (event.target == coursesModal) {
-                coursesModal.style.display = "none";
-            }
-            if (event.target == registrationModal) {
-                registrationModal.style.display = "none";
-            }
-        }
-        
-        // ** تابع شبیه‌سازی ارسال فرم **
-        function submitRegistration() {
-            var name = document.getElementById('fname').value;
-            var phone = document.getElementById('phone').value;
-            var email = document.getElementById('email').value;
-            var course = selectedCourseNameEl.textContent;
-
-            if (!name || !phone) {
-                alert("لطفاً نام و شماره تماس خود را وارد نمایید.");
-                return;
-            }
-            
-            // شبیه‌سازی ارسال موفق
-            alert(
-                "اطلاعات شما برای دوره " + course + " با موفقیت دریافت شد.\n" +
-                "کارشناسان آتی نما به زودی با شما تماس خواهند گرفت."
-            );
-            
-            // بستن فرم پس از ارسال موفق
-            registrationModal.style.display = "none";
-            
-            // خالی کردن فیلدها
-            document.getElementById('fname').value = '';
-            document.getElementById('phone').value = '';
-            document.getElementById('email').value = '';
-        }
-    </script>
 </body>
 </html>
