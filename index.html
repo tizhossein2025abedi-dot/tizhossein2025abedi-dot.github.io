@@ -3,167 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آتی نما - مرکز تخصصی آزمون‌های هوش و استعداد</title>
+    <title>آتی‌نما – حسین عابدی | هوش و استعداد</title>
+
+    <!-- فونت فارسی -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
 
     <style>
-        @font-face {
-            font-family: 'Vazirmatn';
-            src: url('https://cdn.jsdelivr.net/gh/rastikerdar/Vazirmatn@v3000.1.0/dist/font-files/fonts/ttf/Vazirmatn-Regular.ttf') format('truetype');
-            font-weight: 400;
+        body {
+            margin: 0;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'Vazirmatn', sans-serif;
         }
-        * { box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }
-        body { margin: 0; padding: 0; background:#f4f7f9; color:#333; direction: rtl; }
 
-        .header { background:#fff; padding:10px 40px; box-shadow:0 2px 4px rgba(0,0,0,0.1); display:flex; justify-content:space-between; align-items:center; }
-        .logo-container img { height:50px; }
-        .nav-links a { text-decoration:none; color:#333; margin-left:25px; font-weight:500; }
-        .nav-links a:hover { color:#007bff; }
-
-        .main-content { padding:40px; text-align:center; }
-        .hero-section h1 { font-size:2.5em; color:#1a2a5a; }
-        .hero-section p { font-size:1.2em; max-width:700px; margin:auto; color:#555; }
-        .cta-button { background:#007bff; color:#fff; padding:12px 30px; font-size:1.1em; border-radius:8px; cursor:pointer; border:none; }
-        .cta-button:hover { background:#0056b3; }
-
-        .skills-section { background:#e9ecef; padding:60px 40px; }
-        .skills-section h2 { color:#1a2a5a; }
-        .skills-grid { display:flex; justify-content:space-around; flex-wrap:wrap; gap:20px; }
-        .skill-item { background:white; padding:25px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.05); min-width:200px; flex-basis:calc(25% - 30px); text-align:center; }
-        .icon { font-size:2.5em; color:#ffc107; }
-
-        .footer { background:#343a40; color:#adb5bd; text-align:center; padding:30px; }
-        .footer a { color:#007bff; margin:0 10px; }
-
-        /* مودال‌ها */
-        .modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); }
-        .modal-content { background:white; margin:7% auto; padding:20px; width:80%; max-width:600px; border-radius:10px; position:relative; }
-        .close-button { position:absolute; left:20px; top:15px; cursor:pointer; font-size:28px; color:#888; }
-
-        .form-group { margin-bottom:15px; }
-        .form-group label { font-weight:bold; }
-        .form-group input { width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; }
-
-        .registration-submit-btn {
-            width:100%; background:#ffc107; border:none;
-            padding:12px; border-radius:5px; font-size:1.1em; cursor:pointer;
+        /* هدر */
+        header {
+            background: #101010;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
         }
-        .registration-submit-btn:hover { background:#e0a800; }
+        header h1 {
+            font-size: 2.2rem;
+            color: #4da3ff;
+            margin: 0;
+        }
+
+        nav a {
+            color: #ccc;
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #4da3ff;
+        }
+
+        /* هیرو */
+        .hero {
+            text-align: center;
+            padding: 80px 25px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #4da3ff;
+        }
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            color: #bbb;
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            margin-top: 30px;
+            padding: 15px 35px;
+            background: #4da3ff;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        /* معرفی */
+        .about {
+            margin-top: 40px;
+            padding: 40px 25px;
+            background: #111;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            text-align: center;
+        }
+        .about h2 {
+            color: #4da3ff;
+            font-size: 2rem;
+        }
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            color: #ccc;
+            line-height: 1.9;
+            font-size: 1.1rem;
+        }
+
+        /* بخش دوره‌ها */
+        .courses {
+            padding: 60px 25px;
+            text-align: center;
+        }
+        .courses h2 {
+            color: #4da3ff;
+            font-size: 2rem;
+        }
+        .course-box {
+            background: #141414;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 15px auto;
+            width: 90%;
+            max-width: 600px;
+        }
+        .course-box button {
+            margin-top: 15px;
+            background: #4da3ff;
+            color: black;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* واتساپ شناور */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: #25D366;
+            border-radius: 50%;
+            padding: 15px;
+            z-index: 999;
+        }
+        .whatsapp-float img {
+            width: 40px;
+        }
+
+        /* فوتر */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding: 30px;
+            background: #0f0f0f;
+            color: #777;
+        }
+
+        /* مودال */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
+        .modal-content {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 10% auto;
+            width: 90%;
+            max-width: 500px;
+            color: white;
+        }
+        .close-btn {
+            float: left;
+            font-size: 30px;
+            cursor: pointer;
+            color: #888;
+        }
+        .close-btn:hover {
+            color: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 20px;
+            background: #4da3ff;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
     </style>
 </head>
+
 <body>
 
-<!-- هدر -->
-<div class="header">
-    <div class="logo-container">
-        <img src="آتی نما لگو.jpg" alt="لوگو">
+    <!-- هدر -->
+    <header>
+        <h1>آتی‌نما – حسین عابدی</h1>
+        <nav>
+            <a href="#courses">دوره‌ها</a>
+            <a href="#about">معرفی من</a>
+            <a href="#contact">ارتباط</a>
+        </nav>
+    </header>
+
+    <!-- هیرو -->
+    <section class="hero">
+        <h2>مرکز تخصصی هوش و استعداد</h2>
+        <p>
+            آموزش تخصصی هوش، استعداد، تیزهوشان، تحلیل هوش، و آمادگی آزمون‌های مدارس برتر  
+            با رویکرد علمی و تکنیک‌‌محور
+        </p>
+        <button class="cta-button" onclick="openCourses()">مشاهده دوره‌ها</button>
+    </section>
+
+    <!-- معرفی -->
+    <section id="about" class="about">
+        <h2>معرفی حسین عابدی</h2>
+        <p>
+            من **حسین عابدی** با سابقه‌ی تدریس هوش و استعداد،  
+            سال‌هاست دانش‌آموزان را برای موفقیت در آزمون‌های تیزهوشان، نمونه‌دولتی و مدارس برتر آماده می‌کنم.  
+            در آتی‌نما تلاش من این است که با **تحلیل عمیق هوش، روش‌های حل مسئله، تقویت تفکر و استعداد**  
+            مسیر موفقیت آموزشی را برای دانش‌آموزان هموار کنم.
+        </p>
+    </section>
+
+    <!-- دوره‌ها -->
+    <section id="courses" class="courses">
+        <h2>لیست دوره‌ها</h2>
+
+        <div class="course-box">
+            <h3>تیزهوشان پایه ششم</h3>
+            <button onclick="selectCourse('تیزهوشان ششم')">ثبت‌نام</button>
+        </div>
+
+        <div class="course-box">
+            <h3>تیزهوشان پایه نهم</h3>
+            <button onclick="selectCourse('تیزهوشان نهم')">ثبت‌نام</button>
+        </div>
+
+        <div class="course-box">
+            <h3>آموزش ریاضی پایه ۵ تا ۷</h3>
+            <button onclick="selectCourse('ریاضی پایه‌های ۵ - ۶ - ۷')">ثبت‌نام</button>
+        </div>
+
+        <div class="course-box">
+            <h3>تقویت هوش و استعداد</h3>
+            <button onclick="selectCourse('تقویت هوش و استعداد')">ثبت‌نام</button>
+        </div>
+
+    </section>
+
+    <!-- واتساپ -->
+    <a href="https://wa.me/989300565169" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    </a>
+
+    <!-- مودال ثبت‌نام -->
+    <div id="regModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+
+            <h3 id="courseTitle">ثبت‌نام</h3>
+
+            <input id="nameInput" placeholder="نام و نام خانوادگی" required>
+            <input id="phoneInput" placeholder="شماره تماس" required>
+            <input id="emailInput" placeholder="ایمیل (اختیاری)">
+
+            <button class="submit-btn" onclick="sendToWhatsApp()">ارسال به واتساپ</button>
+        </div>
     </div>
-    <div class="nav-links">
-        <a href="#">خانه</a>
-        <a id="openCoursesModal" href="#">مشاهده دوره‌ها</a>
-        <a href="#">درباره ما</a>
-    </div>
-</div>
 
-<!-- محتوای اصلی -->
-<div class="main-content">
-    <div class="hero-section">
-        <h1>آتی نما: دروازه موفقیت در تیزهوشان</h1>
-        <p>با آموزش‌های حرفه‌ای، آزمون‌های شبیه‌ساز، و برنامه‌ریزی تخصصی.</p>
-        <button id="openCoursesModal2" class="cta-button">شروع کنید</button>
-    </div>
-</div>
+    <!-- فوتر -->
+    <footer id="contact">
+        ارتباط با من:  
+        <br>  
+        واتساپ: 09300565169  
+        <br>
+        ایمیل: tizhossein2025abedi@gmail.com
+    </footer>
 
-<!-- فوتر -->
-<div class="footer">
-    <p>تماس: <a href="mailto:tizhossein2025abedi@gmail.com">ایمیل</a> | 
-       <a href="https://wa.me/989300565169">واتساپ: 09300565169</a></p>
-</div>
-
-<!-- مودال لیست دوره‌ها -->
-<div id="coursesModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2>انتخاب دوره</h2>
-        <ul class="course-list">
-            <li>تیزهوشان ششم <button class="select-course" data-course="تیزهوشان ششم">انتخاب</button></li>
-            <li>تیزهوشان نهم <button class="select-course" data-course="تیزهوشان نهم">انتخاب</button></li>
-            <li>مدارس برتر <button class="select-course" data-course="مدارس برتر">انتخاب</button></li>
-        </ul>
-    </div>
-</div>
-
-<!-- مودال فرم ثبت‌نام -->
-<div id="registrationModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h3 id="formTitle">ثبت‌نام در دوره</h3>
-
-        <form id="regForm" onsubmit="event.preventDefault(); sendToWhatsApp();">
-            <div class="form-group">
-                <label>نام و نام خانوادگی</label>
-                <input id="fname" required>
-            </div>
-
-            <div class="form-group">
-                <label>شماره تماس</label>
-                <input id="phone" required>
-            </div>
-
-            <div class="form-group">
-                <label>ایمیل (اختیاری)</label>
-                <input id="email">
-            </div>
-
-            <button class="registration-submit-btn">ارسال اطلاعات</button>
-        </form>
-    </div>
-</div>
 
 <script>
 let selectedCourse = "";
 
-// باز کردن مودال دوره‌ها
-document.getElementById("openCoursesModal").onclick =
-document.getElementById("openCoursesModal2").onclick = function() {
-    document.getElementById("coursesModal").style.display = "block";
-};
+// باز کردن لیست دوره‌ها
+function openCourses() {
+    document.getElementById("courses").scrollIntoView({ behavior: "smooth" });
+}
 
 // انتخاب دوره
-document.querySelectorAll(".select-course").forEach(btn => {
-    btn.onclick = function() {
-        selectedCourse = this.dataset.course;
-        document.getElementById("coursesModal").style.display = "none";
-        document.getElementById("registrationModal").style.display = "block";
-        document.getElementById("formTitle").innerText = "ثبت‌نام در دوره: " + selectedCourse;
-    };
-});
+function selectCourse(name) {
+    selectedCourse = name;
+    document.getElementById("regModal").style.display = "block";
+    document.getElementById("courseTitle").innerText = "ثبت‌نام در دوره: " + name;
+}
 
 // بستن مودال
-document.querySelectorAll(".close-button").forEach(btn => {
-    btn.onclick = function() {
-        this.parentElement.parentElement.style.display = "none";
-    };
-});
+function closeModal() {
+    document.getElementById("regModal").style.display = "none";
+}
 
 // ارسال به واتساپ
 function sendToWhatsApp() {
-    let name = document.getElementById("fname").value;
-    let phone = document.getElementById("phone").value;
-    let email = document.getElementById("email").value;
+    let name = document.getElementById("nameInput").value;
+    let phone = document.getElementById("phoneInput").value;
+    let email = document.getElementById("emailInput").value;
 
-    let msg =
-`سلام، یک ثبت‌نام جدید دریافت شد:
+    let msg = 
+`ثبت‌نام جدید:
 
 نام: ${name}
 شماره: ${phone}
 ایمیل: ${email}
-دوره انتخابی: ${selectedCourse}`;
+دوره: ${selectedCourse}`;
 
-    let url = "https://wa.me/989300565169?text=" + encodeURIComponent(msg);
-
-    window.open(url, "_blank");
+    window.open("https://wa.me/989300565169?text=" + encodeURIComponent(msg), "_blank");
 }
+
 </script>
 
 </body>
 </html>
+
