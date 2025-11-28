@@ -25,8 +25,11 @@
             align-items: center;
             border-bottom: 1px solid #222;
         }
+        header img {
+            height: 60px;
+        }
         header h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             color: #4da3ff;
             margin: 0;
         }
@@ -90,13 +93,11 @@
         }
 
         /* بخش دوره‌ها */
-        .courses {
-            padding: 60px 25px;
-            text-align: center;
-        }
-        .courses h2 {
+        .section-title {
             color: #4da3ff;
             font-size: 2rem;
+            text-align: center;
+            margin-top: 60px;
         }
         .course-box {
             background: #141414;
@@ -106,6 +107,7 @@
             margin: 15px auto;
             width: 90%;
             max-width: 600px;
+            text-align: center;
         }
         .course-box button {
             margin-top: 15px;
@@ -115,17 +117,6 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-        }
-
-        /* ویدیو */
-        .video-section {
-            margin-top: 40px;
-            padding: 40px 25px;
-            text-align: center;
-        }
-        .video-section h2 {
-            color: #4da3ff;
-            font-size: 2rem;
         }
 
         /* واتساپ شناور */
@@ -140,15 +131,6 @@
         }
         .whatsapp-float img {
             width: 40px;
-        }
-
-        /* فوتر */
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            padding: 30px;
-            background: #0f0f0f;
-            color: #777;
         }
 
         /* مودال */
@@ -170,35 +152,14 @@
             max-width: 500px;
             color: white;
         }
-        .close-btn {
-            float: left;
-            font-size: 30px;
-            cursor: pointer;
-            color: #888;
-        }
-        .close-btn:hover {
-            color: white;
-        }
 
-        input {
-            width: 100%;
-            padding: 12px;
-            margin-top: 8px;
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 8px;
-            color: white;
-        }
-
-        .submit-btn {
-            width: 100%;
-            margin-top: 20px;
-            background: #4da3ff;
-            padding: 12px;
-            border-radius: 10px;
-            border: none;
-            font-size: 1.1rem;
-            cursor: pointer;
+        /* فوتر */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding: 30px;
+            background: #0f0f0f;
+            color: #777;
         }
 
     </style>
@@ -208,11 +169,15 @@
 
     <!-- هدر -->
     <header>
+        <img src="آتی نما لگو.jpg" alt="لوگو">
         <h1>آتی‌نما – حسین عابدی</h1>
+
         <nav>
             <a href="#courses">دوره‌ها</a>
-            <a href="#about">معرفی من</a>
-            <a href="#contact">ارتباط</a>
+            <a href="#exams">آزمون شبیه‌ساز</a>
+            <a href="#samples">نمونه سؤال</a>
+            <a href="#video">ویدیو</a>
+            <a href="#about">معرفی</a>
         </nav>
     </header>
 
@@ -220,10 +185,9 @@
     <section class="hero">
         <h2>مرکز تخصصی هوش و استعداد</h2>
         <p>
-            آموزش تخصصی هوش، استعداد، تیزهوشان، تحلیل هوش، و آمادگی آزمون‌های مدارس برتر  
-            با رویکرد علمی و تکنیک‌‌محور
+            آموزش تخصصی هوش، استعداد، تیزهوشان، تحلیل هوش  
+            و آمادگی آزمون‌های مدارس برتر با رویکرد علمی
         </p>
-        <button class="cta-button" onclick="openCourses()">مشاهده دوره‌ها</button>
     </section>
 
     <!-- معرفی -->
@@ -232,45 +196,82 @@
         <p>
             من **حسین عابدی** با سابقه‌ی تدریس هوش و استعداد،  
             سال‌هاست دانش‌آموزان را برای موفقیت در آزمون‌های تیزهوشان، نمونه‌دولتی و مدارس برتر آماده می‌کنم.  
-            در آتی‌نما تلاش من این است که با **تحلیل عمیق هوش، روش‌های حل مسئله، تقویت تفکر و استعداد**  
-            مسیر موفقیت آموزشی را برای دانش‌آموزان هموار کنم.
+            تمرکز اصلی آموزش‌های من بر **تحلیل هوش، تقویت استعداد، حل مسئله و تفکر هوشمندانه** است.
         </p>
     </section>
 
     <!-- دوره‌ها -->
-    <section id="courses" class="courses">
-        <h2>لیست دوره‌ها</h2>
+    <h2 class="section-title" id="courses">دوره‌های آموزشی</h2>
 
-        <div class="course-box">
-            <h3>تیزهوشان پایه ششم</h3>
-            <button onclick="selectCourse('تیزهوشان ششم')">ثبت‌نام</button>
-        </div>
+    <div class="course-box">
+        <h3>تیزهوشان پایه ششم</h3>
+        <button onclick="selectCourse('تیزهوشان ششم')">ثبت‌نام</button>
+    </div>
 
-        <div class="course-box">
-            <h3>تیزهوشان پایه نهم</h3>
-            <button onclick="selectCourse('تیزهوشان نهم')">ثبت‌نام</button>
-        </div>
+    <div class="course-box">
+        <h3>تیزهوشان پایه نهم</h3>
+        <button onclick="selectCourse('تیزهوشان نهم')">ثبت‌نام</button>
+    </div>
 
-        <div class="course-box">
-            <h3>آموزش ریاضی پایه ۵ تا ۷</h3>
-            <button onclick="selectCourse('ریاضی پایه‌های ۵ - ۶ - ۷')">ثبت‌نام</button>
-        </div>
+    <div class="course-box">
+        <h3>آموزش ریاضی پایه ۵ تا ۷</h3>
+        <button onclick="selectCourse('ریاضی پایه‌های ۵ - ۶ - ۷')">ثبت‌نام</button>
+    </div>
 
-        <div class="course-box">
-            <h3>تقویت هوش و استعداد</h3>
-            <button onclick="selectCourse('تقویت هوش و استعداد')">ثبت‌نام</button>
-        </div>
+    <div class="course-box">
+        <h3>تقویت هوش و استعداد</h3>
+        <button onclick="selectCourse('تقویت هوش و استعداد')">ثبت‌نام</button>
+    </div>
 
-    </section>
+    <!-- آزمون شبیه‌ساز -->
+    <h2 class="section-title" id="exams">آزمون‌های شبیه‌ساز</h2>
+
+    <!-- پایه پنجم -->
+    <div class="course-box"><h3>آزمون ریاضی پایه پنجم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری ریاضی پنجم')">ثبت‌نام</button></div>
+    <div class="course-box"><h3>آزمون ریاضی پایه پنجم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین ریاضی پنجم')">ثبت‌نام</button></div>
+
+    <!-- پایه ششم -->
+    <div class="course-box"><h3>آزمون ریاضی پایه ششم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری ریاضی ششم')">ثبت‌نام</button></div>
+    <div class="course-box"><h3>آزمون ریاضی پایه ششم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین ریاضی ششم')">ثبت‌نام</button></div>
+
+    <!-- پایه هفتم -->
+    <div class="course-box"><h3>آزمون ریاضی پایه هفتم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری ریاضی هفتم')">ثبت‌نام</button></div>
+    <div class="course-box"><h3>آزمون ریاضی پایه هفتم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین ریاضی هفتم')">ثبت‌نام</button></div>
+
+    <!-- تیزهوشان -->
+    <div class="course-box"><h3>آزمون تیزهوشان ششم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری تیزهوشان ششم')">ثبت‌نام</button></div>
+    <div class="course-box"><h3>آزمون تیزهوشان ششم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین تیزهوشان ششم')">ثبت‌نام</button></div>
+
+    <div class="course-box"><h3>آزمون تیزهوشان نهم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری تیزهوشان نهم')">ثبت‌نام</button></div>
+    <div class="course-box"><h3>آزمون تیزهوشان نهم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین تیزهوشان نهم')">ثبت‌نام</button></div>
+
+    <!-- آزمون رایگان افتتاح سایت -->
+    <div class="course-box" style="border:2px solid #4da3ff;">
+        <h3>🎁 آزمون رایگان هوش و استعداد (ویژه افتتاح سایت)</h3>
+        <a href="https://exams.ir/e?14227" target="_blank">
+            <button>شرکت در آزمون رایگان</button>
+        </a>
+    </div>
+
+    <!-- نمونه سؤال -->
+    <h2 class="section-title" id="samples">نمونه سؤال</h2>
+    <div class="course-box">
+        <h3>نمونه سؤال‌های هوش ششم</h3>
+        <button onclick="selectCourse('نمونه سوال هوش ششم')">دریافت</button>
+    </div>
+
+    <div class="course-box">
+        <h3>نمونه سؤال‌های تیزهوشان نهم</h3>
+        <button onclick="selectCourse('نمونه سوال نهم')">دریافت</button>
+    </div>
 
     <!-- ویدیو آپارات -->
-    <section class="video-section">
-        <h2>ویدیو معرفی دوره</h2>
-
+    <h2 class="section-title" id="video">ویدیو آموزشی</h2>
+    <div class="course-box">
         <div id="87178512717">
             <script type="text/JavaScript" src="https://www.aparat.com/embed/ocz75n3?data[rnddiv]=87178512717&data[responsive]=yes&recom=self"></script>
         </div>
-    </section>
+    </div>
 
     <!-- واتساپ -->
     <a href="https://wa.me/989300565169" target="_blank" class="whatsapp-float">
@@ -280,20 +281,18 @@
     <!-- مودال ثبت‌نام -->
     <div id="regModal" class="modal">
         <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-
+            <span style="float:left;font-size:28px;cursor:pointer" onclick="closeModal()">&times;</span>
             <h3 id="courseTitle">ثبت‌نام</h3>
 
-            <input id="nameInput" placeholder="نام و نام خانوادگی" required>
-            <input id="phoneInput" placeholder="شماره تماس" required>
+            <input id="nameInput" placeholder="نام و نام خانوادگی">
+            <input id="phoneInput" placeholder="شماره تماس">
             <input id="emailInput" placeholder="ایمیل (اختیاری)">
-
             <button class="submit-btn" onclick="sendToWhatsApp()">ارسال به واتساپ</button>
         </div>
     </div>
 
     <!-- فوتر -->
-    <footer id="contact">
+    <footer>
         ارتباط با من:  
         <br>  
         واتساپ: 09300565169  
@@ -301,24 +300,22 @@
         ایمیل: tizhossein2025abedi@gmail.com
     </footer>
 
-
 <script>
 let selectedCourse = "";
 
-function openCourses() {
-    document.getElementById("courses").scrollIntoView({ behavior: "smooth" });
-}
-
+// انتخاب دوره
 function selectCourse(name) {
     selectedCourse = name;
     document.getElementById("regModal").style.display = "block";
-    document.getElementById("courseTitle").innerText = "ثبت‌نام در دوره: " + name;
+    document.getElementById("courseTitle").innerText = "ثبت‌نام / دریافت: " + name;
 }
 
+// بستن مودال
 function closeModal() {
     document.getElementById("regModal").style.display = "none";
 }
 
+// ارسال واتساپ
 function sendToWhatsApp() {
     let name = document.getElementById("nameInput").value;
     let phone = document.getElementById("phoneInput").value;
@@ -330,11 +327,10 @@ function sendToWhatsApp() {
 نام: ${name}
 شماره: ${phone}
 ایمیل: ${email}
-دوره: ${selectedCourse}`;
+مورد انتخابی: ${selectedCourse}`;
 
     window.open("https://wa.me/989300565169?text=" + encodeURIComponent(msg), "_blank");
 }
-
 </script>
 
 </body>
