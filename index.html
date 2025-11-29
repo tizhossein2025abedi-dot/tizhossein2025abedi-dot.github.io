@@ -391,11 +391,28 @@ function sendToWhatsApp() {
     <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
         <h2 style="color:#4da3ff;">🎬 ویدیوهای آفلاین کلاس‌ها</h2>
         <div id="offlineVideosSection">
-            <p style="color:#777;">فعلاً هیچ ویدیوی آموزشی اضافه نشده.</p>
-        </div>
+<div id="offlineVideoActual" style="display:none;">
+<div id="47821435081">
+<script type="text/JavaScript" src="https://www.aparat.com/embed/psw7g0u?data[rnddiv]=47821435081&data[responsive]=yes&recom=self"></script>
+</div>
+</div>
+</div>
     </div>
 
-    <button onclick="logoutUser()" style="padding:12px 30px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;">
+    
+    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
+        <h2 style="color:#4da3ff;">🛠 رفع اشکال</h2>
+        <p style="color:#aaa;">عکس یا متن خود را ارسال کنید تا برای استاد فرستاده شود.</p>
+        <textarea id="debugText" placeholder="متن پیام..." style="width:100%;height:100px;background:#1a1a1a;border:1px solid #333;border-radius:8px;color:white;padding:10px;"></textarea>
+        <br><br>
+        <input type="file" id="debugImage" accept="image/*" style="color:white;">
+        <br><br>
+        <button onclick="sendDebug()" style="padding:12px 25px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;font-size:1rem;">
+            ارسال به واتساپ
+        </button>
+    </div>
+
+<button onclick="logoutUser()" style="padding:12px 30px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;">
         خروج
     </button>
 </div>
@@ -429,7 +446,7 @@ function loginUser(){
         document.getElementById("userPaye").innerText="نوع دسترسی: "+codes[pass];
         document.getElementById('mainSite').style.display='none';
         document.getElementById('loginPage').style.display='none';
-        document.getElementById('panelPage').style.display='block';
+        document.getElementById('panelPage').style.display='block'; loadOfflineVideos();
     } else {
         alert("کد ورود اشتباه است!");
     }
@@ -441,6 +458,37 @@ function logoutUser(){
 }
 </script>
 
+<script>
+function loadOfflineVideos(){
+    const paye = localStorage.getItem("userpaye");
+    let vid = document.getElementById("offlineVideoActual");
+    if(!vid) return;
+    if(paye==="تیزهوشان پایه ششم" || paye==="تیزهوشان پایه نهم"){
+        vid.style.display="block";
+    } else {
+        vid.style.display="none";
+    }
+}
+</script>
+<script>
+function sendDebug(){
+    let txt = document.getElementById("debugText").value;
+    let img = document.getElementById("debugImage").files[0];
+    let msg = "رفع اشکال:\n" + txt;
+
+    if(img){
+        // create temporary URL for WhatsApp
+        let reader = new FileReader();
+        reader.onload = function(e){
+            let link = e.target.result;
+            window.open("https://wa.me/989300565169?text=" + encodeURIComponent(msg + "\n[تصویر ارسال شد]"), "_blank");
+        };
+        reader.readAsDataURL(img);
+    } else {
+        window.open("https://wa.me/989300565169?text=" + encodeURIComponent(msg), "_blank");
+    }
+}
+</script>
 </body>
 </html>
 
