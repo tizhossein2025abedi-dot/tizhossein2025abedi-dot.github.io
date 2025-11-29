@@ -166,6 +166,7 @@
 </head>
 
 <body>
+<div id='mainSite'>
 
     <!-- هدر -->
     <header>
@@ -178,7 +179,7 @@
             <a href="#samples">نمونه سؤال</a>
             <a href="#video">ویدیو</a>
             <a href="#about">معرفی</a>
-        </nav>
+        <a href="#" onclick="showLogin()" style="color:#4da3ff;font-weight:bold;">ورود به پنل</a></nav>
     </header>
 
     <!-- هیرو -->
@@ -333,8 +334,98 @@ function sendToWhatsApp() {
 }
 </script>
 
+</div>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" style="display:none;text-align:center;padding-top:80px;">
+    <h2>ورود به پنل</h2>
+    <div style="background:#111;width:90%;max-width:400px;margin:auto;padding:25px;border-radius:12px;border:1px solid #333;">
+        <input id="loginPassword" placeholder="کد ورود" type="password"
+          style="width:90%;padding:12px;margin-top:12px;background:#1b1b1b;border:1px solid #333;border-radius:8px;color:white;">
+        <button onclick="loginUser()" style="width:90%;padding:12px;margin-top:20px;background:#4da3ff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;">ورود</button>
+        <button onclick="showMain()" style="margin-top:15px;background:#333;border:none;padding:10px 20px;border-radius:6px;color:#fff;">بازگشت</button>
+    </div>
+</div>
+
+<!-- PANEL PAGE -->
+<div id="panelPage" style="display:none;text-align:right;padding:40px;color:white;max-width:900px;margin:auto;">
+
+    <h2 style="text-align:center;">پنل کاربری</h2>
+
+    <div style="background:#111;padding:15px;border-radius:10px;margin-bottom:25px;border:1px solid #333;">
+        <h3 id="userPaye"></h3>
+    </div>
+
+    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
+        <h2 style="color:#4da3ff;">📘 آزمون‌ها</h2>
+        <div id="examsSection">
+            <p style="color:#777;">فعلاً هیچ آزمونی اضافه نشده.</p>
+        </div>
+    </div>
+
+    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
+        <h2 style="color:#4da3ff;">🎥 ویدیوهای تحلیل آزمون</h2>
+        <div id="analysisVideosSection">
+            <p style="color:#777;">فعلاً هیچ ویدیو تحلیلی اضافه نشده.</p>
+        </div>
+    </div>
+
+    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
+        <h2 style="color:#4da3ff;">🎬 ویدیوهای آفلاین کلاس‌ها</h2>
+        <div id="offlineVideosSection">
+            <p style="color:#777;">فعلاً هیچ ویدیوی آموزشی اضافه نشده.</p>
+        </div>
+    </div>
+
+    <button onclick="logoutUser()" style="padding:12px 30px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;">
+        خروج
+    </button>
+</div>
+
+<script>
+function showLogin(){ 
+    document.getElementById('mainSite').style.display='none';
+    document.getElementById('loginPage').style.display='block';
+    document.getElementById('panelPage').style.display='none';
+}
+
+function showMain(){
+    document.getElementById('mainSite').style.display='block';
+    document.getElementById('loginPage').style.display='none';
+    document.getElementById('panelPage').style.display='none';
+}
+
+function loginUser(){
+    const codes={
+        "543216":"دانش‌آموز پایه پنجم",
+        "6543217":"دانش‌آموز پایه ششم",
+        "76543218":"دانش‌آموز پایه هفتم",
+        "654321987":"تیزهوشان پایه ششم",
+        "987654321987":"تیزهوشان پایه نهم"
+    };
+
+    let pass=document.getElementById("loginPassword").value;
+
+    if(codes[pass]){
+        localStorage.setItem("userpaye",codes[pass]);
+        document.getElementById("userPaye").innerText="نوع دسترسی: "+codes[pass];
+        document.getElementById('mainSite').style.display='none';
+        document.getElementById('loginPage').style.display='none';
+        document.getElementById('panelPage').style.display='block';
+    } else {
+        alert("کد ورود اشتباه است!");
+    }
+}
+
+function logoutUser(){
+    localStorage.clear();
+    showLogin();
+}
+</script>
+
 </body>
 </html>
+
 
 
 
