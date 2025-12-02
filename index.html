@@ -1,637 +1,3 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آتی‌نما – حسین عابدی | هوش و استعداد</title>
-
-    <!-- فونت فارسی -->
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            background: #0a0a0a;
-            color: #e5e5e5;
-            font-family: 'Vazirmatn', sans-serif;
-        }
-
-        /* هدر */
-        header {
-            background: #101010;
-            padding: 25px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #222;
-        }
-        header img {
-            height: 60px;
-        }
-        header h1 {
-            font-size: 2rem;
-            color: #4da3ff;
-            margin: 0;
-        }
-
-        nav a {
-            color: #ccc;
-            margin-left: 25px;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-        nav a:hover {
-            color: #4da3ff;
-        }
-
-        /* هیرو */
-        .hero {
-            text-align: center;
-            padding: 80px 25px;
-        }
-        .hero h2 {
-            font-size: 2.5rem;
-            color: #4da3ff;
-        }
-        .hero p {
-            max-width: 800px;
-            margin: auto;
-            color: #bbb;
-            font-size: 1.2rem;
-        }
-
-        .cta-button {
-            margin-top: 30px;
-            padding: 15px 35px;
-            background: #4da3ff;
-            color: #000;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-
-        /* معرفی */
-        .about {
-            margin-top: 40px;
-            padding: 40px 25px;
-            background: #111;
-            border-top: 1px solid #222;
-            border-bottom: 1px solid #222;
-            text-align: center;
-        }
-        .about h2 {
-            color: #4da3ff;
-            font-size: 2rem;
-        }
-        .about p {
-            max-width: 850px;
-            margin: auto;
-            color: #ccc;
-            line-height: 1.9;
-            font-size: 1.1rem;
-        }
-
-        /* بخش دوره‌ها */
-        .section-title {
-            color: #4da3ff;
-            font-size: 2rem;
-            text-align: center;
-            margin-top: 60px;
-        }
-        .course-box {
-            background: #141414;
-            border: 1px solid #222;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 15px auto;
-            width: 90%;
-            max-width: 600px;
-            text-align: center;
-        }
-        .course-box button {
-            margin-top: 15px;
-            background: #4da3ff;
-            color: black;
-            padding: 10px 22px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        /* واتساپ شناور */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            left: 25px;
-            background: #25D366;
-            border-radius: 50%;
-            padding: 15px;
-            z-index: 999;
-        }
-        .whatsapp-float img {
-            width: 40px;
-        }
-
-        /* مودال */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6);
-        }
-        .modal-content {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 10px;
-            padding: 25px;
-            margin: 10% auto;
-            width: 90%;
-            max-width: 500px;
-            color: white;
-        }
-
-        /* فوتر */
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            padding: 30px;
-            background: #0f0f0f;
-            color: #777;
-        }
-
-    </style>
-</head>
-
-<body>
-<div id='mainSite'>
-
-    <!-- هدر -->
-    <header>
-        <img src="آتی نما لگو.jpg" alt="لوگو">
-        <h1>آتی‌نما – حسین عابدی</h1>
-
-        <nav>
-            <a href="#courses">دوره‌ها</a>
-            <a href="#exams">آزمون شبیه‌ساز</a>
-            <a href="#samples">نمونه سؤال</a>
-            <a href="#video">ویدیو</a>
-            <a href="#about">معرفی</a>
-        <a href="#" onclick="showLogin()" style="color:#4da3ff;font-weight:bold;">ورود به پنل</a></nav>
-    </header>
-
-    <!-- هیرو -->
-    <section class="hero">
-        <h2>مرکز تخصصی هوش و استعداد</h2>
-        <p>
-            آموزش تخصصی هوش، استعداد، تیزهوشان، تحلیل هوش  
-            و آمادگی آزمون‌های مدارس برتر با رویکرد علمی
-        </p>
-    </section>
-
-    <!-- معرفی -->
-    <section id="about" class="about">
-        <h2>معرفی حسین عابدی</h2>
-        <p>
-            من **حسین عابدی** با سابقه‌ی تدریس هوش و استعداد،  
-            سال‌هاست دانش‌آموزان را برای موفقیت در آزمون‌های تیزهوشان، نمونه‌دولتی و مدارس برتر آماده می‌کنم.  
-            تمرکز اصلی آموزش‌های من بر **تحلیل هوش، تقویت استعداد، حل مسئله و تفکر هوشمندانه** است.
-        </p>
-    </section>
-
-    <!-- دوره‌ها -->
-    <h2 class="section-title" id="courses">دوره‌های آموزشی</h2>
-
-    <div class="course-box">
-        <h3>تیزهوشان پایه ششم</h3>
-        <button onclick="selectCourse('تیزهوشان ششم')">ثبت‌نام</button>
-    </div>
-
-    <div class="course-box">
-        <h3>تیزهوشان پایه نهم</h3>
-        <button onclick="selectCourse('تیزهوشان نهم')">ثبت‌نام</button>
-    </div>
-
-    <div class="course-box">
-        <h3>آموزش ریاضی پایه ۵ تا ۷</h3>
-        <button onclick="selectCourse('ریاضی پایه‌های ۵ - ۶ - ۷')">ثبت‌نام</button>
-    </div>
-
-    <div class="course-box">
-        <h3>تقویت هوش و استعداد</h3>
-        <button onclick="selectCourse('تقویت هوش و استعداد')">ثبت‌نام</button>
-    </div>
-
-    <!-- آزمون شبیه‌ساز -->
-    <h2 class="section-title" id="exams">آزمون‌های شبیه‌ساز</h2>
-
-    <!-- پایه پنجم -->
-    <div class="course-box"><h3>آزمون ریاضی پایه پنجم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری ریاضی پنجم')">ثبت‌نام</button></div>
-    <div class="course-box"><h3>آزمون ریاضی پایه پنجم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین ریاضی پنجم')">ثبت‌نام</button></div>
-
-    <!-- پایه ششم -->
-    <div class="course-box"><h3>آزمون ریاضی پایه ششم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری ریاضی ششم')">ثبت‌نام</button></div>
-    <div class="course-box"><h3>آزمون ریاضی پایه ششم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین ریاضی ششم')">ثبت‌نام</button></div>
-
-    <!-- پایه هفتم -->
-    <div class="course-box"><h3>آزمون ریاضی پایه هفتم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری ریاضی هفتم')">ثبت‌نام</button></div>
-    <div class="course-box"><h3>آزمون ریاضی پایه هفتم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین ریاضی هفتم')">ثبت‌نام</button></div>
-
-    <!-- تیزهوشان -->
-    <div class="course-box"><h3>آزمون تیزهوشان ششم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری تیزهوشان ششم')">ثبت‌نام</button></div>
-    <div class="course-box"><h3>آزمون تیزهوشان ششم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین تیزهوشان ششم')">ثبت‌نام</button></div>
-
-    <div class="course-box"><h3>آزمون تیزهوشان نهم (حضوری)</h3><button onclick="selectCourse('آزمون حضوری تیزهوشان نهم')">ثبت‌نام</button></div>
-    <div class="course-box"><h3>آزمون تیزهوشان نهم (آنلاین)</h3><button onclick="selectCourse('آزمون آنلاین تیزهوشان نهم')">ثبت‌نام</button></div>
-
-    <!-- آزمون رایگان افتتاح سایت -->
-    <div class="course-box" style="border:2px solid #4da3ff;">
-        <h3>🎁 آزمون رایگان هوش و استعداد (ویژه افتتاح سایت)</h3>
-        <a href="https://exams.ir/e?14227" target="_blank">
-            <button>شرکت در آزمون رایگان</button>
-        </a>
-    </div>
-
-    <!-- نمونه سؤال -->
-    <h2 class="section-title" id="samples">نمونه سؤال</h2>
-    <div class="course-box">
-        <h3>نمونه سؤال‌های هوش ششم</h3>
-        <button onclick="selectCourse('نمونه سوال هوش ششم')">دریافت</button>
-    </div>
-
-    <div class="course-box">
-        <h3>نمونه سؤال‌های تیزهوشان نهم</h3>
-        <button onclick="selectCourse('نمونه سوال نهم')">دریافت</button>
-    </div>
-
-    <!-- ویدیو آپارات -->
-    <h2 class="section-title" id="video">ویدیو آموزشی</h2>
-    <div class="course-box">
-        <div id="87178512717">
-            <script type="text/JavaScript" src="https://www.aparat.com/embed/ocz75n3?data[rnddiv]=87178512717&data[responsive]=yes&recom=self"></script>
-        </div>
-    </div>
-
-    <!-- واتساپ -->
-    <a href="https://wa.me/989300565169" target="_blank" class="whatsapp-float">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-    </a>
-
-    <!-- مودال ثبت‌نام -->
-    <div id="regModal" class="modal">
-        <div class="modal-content">
-            <span style="float:left;font-size:28px;cursor:pointer" onclick="closeModal()">&times;</span>
-            <h3 id="courseTitle">ثبت‌نام</h3>
-
-            <input id="nameInput" placeholder="نام و نام خانوادگی">
-            <input id="phoneInput" placeholder="شماره تماس">
-            <input id="emailInput" placeholder="ایمیل (اختیاری)">
-            <button class="submit-btn" onclick="sendToWhatsApp()">ارسال به واتساپ</button>
-        </div>
-    </div>
-
-    <!-- فوتر -->
-    <footer>
-        ارتباط با من:  
-        <br>  
-        واتساپ: 09300565169  
-        <br>
-        ایمیل: tizhossein2025abedi@gmail.com
-    </footer>
-
-<script>
-let selectedCourse = "";
-
-// انتخاب دوره
-function selectCourse(name) {
-    selectedCourse = name;
-    document.getElementById("regModal").style.display = "block";
-    document.getElementById("courseTitle").innerText = "ثبت‌نام / دریافت: " + name;
-}
-
-// بستن مودال
-function closeModal() {
-    document.getElementById("regModal").style.display = "none";
-}
-
-// ارسال واتساپ
-function sendToWhatsApp() {
-    let name = document.getElementById("nameInput").value;
-    let phone = document.getElementById("phoneInput").value;
-    let email = document.getElementById("emailInput").value;
-
-    let msg = 
-`ثبت‌نام جدید:
-
-نام: ${name}
-شماره: ${phone}
-ایمیل: ${email}
-مورد انتخابی: ${selectedCourse}`;
-
-    window.open("https://wa.me/989300565169?text=" + encodeURIComponent(msg), "_blank");
-}
-</script>
-
-</div>
-
-<!-- LOGIN PAGE -->
-<div id="loginPage" style="display:none;text-align:center;padding-top:80px;">
-    <h2>ورود به پنل</h2>
-    <div style="background:#111;width:90%;max-width:400px;margin:auto;padding:25px;border-radius:12px;border:1px solid #333;">
-        <input id="loginPassword" placeholder="کد ورود" type="password"
-          style="width:90%;padding:12px;margin-top:12px;background:#1b1b1b;border:1px solid #333;border-radius:8px;color:white;">
-        <button onclick="loginUser()" style="width:90%;padding:12px;margin-top:20px;background:#4da3ff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;">ورود</button>
-        <button onclick="showMain()" style="margin-top:15px;background:#333;border:none;padding:10px 20px;border-radius:6px;color:#fff;">بازگشت</button>
-    </div>
-</div>
-
-<!-- PANEL PAGE -->
-<div id="panelPage" style="display:none;text-align:right;padding:40px;color:white;max-width:900px;margin:auto;">
-
-    <h2 style="text-align:center;">پنل کاربری</h2>
-
-    <div style="background:#111;padding:15px;border-radius:10px;margin-bottom:25px;border:1px solid #333;">
-        <h3 id="userPaye"></h3>
-    </div>
-
-    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
-        <h2 style="color:#4da3ff;">📘 آزمون‌ها</h2>
-        
-<div id="examsSection">
-    <h3 style="color:#4da3ff; margin-bottom:15px;">
-        📘 آزمون رایگان هوش و استعداد تحلیلی به مناسبت افتتاح سایت آتی‌نما
-    </h3>
-
-    <a href="https://exams.ir/e?14227" target="_blank">
-        <button style="
-            padding:12px 25px;
-            background:#4da3ff;
-            border:none;
-            border-radius:8px;
-            cursor:pointer;
-            font-size:1.1rem;
-            color:#000;
-        ">
-            🚀 شرکت در آزمون
-        </button>
-    </a>
-</div>
-
-    </div>
-
-    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
-        <h2 style="color:#4da3ff;">🎥 ویدیوهای تحلیل آزمون</h2>
-        <div id="analysisVideosSection">
-            <p style="color:#777;">فعلاً هیچ ویدیو تحلیلی اضافه نشده.</p>
-        </div>
-    </div>
-
-    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
-        <h2 style="color:#4da3ff;">🎬 ویدیوهای آفلاین کلاس‌ها</h2>
-        <div id="offlineVideosSection">
-<div id="offlineVideoActual" style="display:none;">
-<div id="47821435081">
-<script type="text/JavaScript" src="https://www.aparat.com/embed/psw7g0u?data[rnddiv]=47821435081&data[responsive]=yes&recom=self"></script>
-</div>
-</div>
-</div>
-    </div>
-
-    
-    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
-        <h2 style="color:#4da3ff;">🛠 رفع اشکال</h2>
-        <p style="color:#aaa;">عکس یا متن خود را ارسال کنید تا برای استاد فرستاده شود.</p>
-        <textarea id="debugText" placeholder="متن پیام..." style="width:100%;height:100px;background:#1a1a1a;border:1px solid #333;border-radius:8px;color:white;padding:10px;"></textarea>
-        <br><br>
-        <input type="file" id="debugImage" accept="image/*" style="color:white;">
-        <br><br>
-        <button onclick="sendDebug()" style="padding:12px 25px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;font-size:1rem;">
-            ارسال به واتساپ
-        </button>
-    </div>
-
-
-    <div style="background:#121212;padding:20px;border-radius:12px;margin-bottom:25px;border:1px solid #333;">
-        <h2 style="color:#4da3ff;">📚 تکالیف</h2>
-        
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 1</h3>
-        <input type="file" id="hw1" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(1)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 2</h3>
-        <input type="file" id="hw2" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(2)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 3</h3>
-        <input type="file" id="hw3" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(3)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 4</h3>
-        <input type="file" id="hw4" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(4)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 5</h3>
-        <input type="file" id="hw5" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(5)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 6</h3>
-        <input type="file" id="hw6" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(6)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 7</h3>
-        <input type="file" id="hw7" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(7)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 8</h3>
-        <input type="file" id="hw8" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(8)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 9</h3>
-        <input type="file" id="hw9" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(9)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 10</h3>
-        <input type="file" id="hw10" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(10)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 11</h3>
-        <input type="file" id="hw11" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(11)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 12</h3>
-        <input type="file" id="hw12" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(12)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 13</h3>
-        <input type="file" id="hw13" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(13)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 14</h3>
-        <input type="file" id="hw14" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(14)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 15</h3>
-        <input type="file" id="hw15" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(15)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 16</h3>
-        <input type="file" id="hw16" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(16)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 17</h3>
-        <input type="file" id="hw17" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(17)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 18</h3>
-        <input type="file" id="hw18" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(18)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 19</h3>
-        <input type="file" id="hw19" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(19)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    <div style='background:#1a1a1a;padding:15px;border:1px solid #333;border-radius:8px;margin-bottom:15px;'>
-        <h3 style='color:#4da3ff;'>جلسه 20</h3>
-        <input type="file" id="hw20" accept="application/pdf" style="color:white;">
-        <button onclick="sendHW(20)" style="margin-top:10px;padding:8px 18px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;color:black;">ارسال</button>
-    </div>
-    
-    </div>
-
-<button onclick="logoutUser()" style="padding:12px 30px;background:#4da3ff;border:none;border-radius:8px;cursor:pointer;">
-        خروج
-    </button>
-</div>
-
-<script>
-function showLogin(){ 
-    document.getElementById('mainSite').style.display='none';
-    document.getElementById('loginPage').style.display='block';
-    document.getElementById('panelPage').style.display='none';
-}
-
-function showMain(){
-    document.getElementById('mainSite').style.display='block';
-    document.getElementById('loginPage').style.display='none';
-    document.getElementById('panelPage').style.display='none';
-}
-
-function loginUser(){
-    const codes={
-        "543216":"دانش‌آموز پایه پنجم",
-        "6543217":"دانش‌آموز پایه ششم",
-        "76543218":"دانش‌آموز پایه هفتم",
-        "654321987":"تیزهوشان پایه ششم",
-        "987654321987":"تیزهوشان پایه نهم"
-    };
-
-    let pass=document.getElementById("loginPassword").value;
-
-    if(codes[pass]){
-        localStorage.setItem("userpaye",codes[pass]);
-        document.getElementById("userPaye").innerText="نوع دسترسی: "+codes[pass];
-        document.getElementById('mainSite').style.display='none';
-        document.getElementById('loginPage').style.display='none';
-        document.getElementById('panelPage').style.display='block'; loadOfflineVideos();
-    } else {
-        alert("کد ورود اشتباه است!");
-    }
-}
-
-function logoutUser(){
-    localStorage.clear();
-    showLogin();
-}
-</script>
-
-<script>
-function loadOfflineVideos(){
-    const paye = localStorage.getItem("userpaye");
-    let vid = document.getElementById("offlineVideoActual");
-    if(!vid) return;
-    if(paye==="تیزهوشان پایه ششم" || paye==="تیزهوشان پایه نهم"){
-        vid.style.display="block";
-    } else {
-        vid.style.display="none";
-    }
-}
-</script>
-<script>
-function sendDebug(){
-    let txt = document.getElementById("debugText").value;
-    let img = document.getElementById("debugImage").files[0];
-    let msg = "رفع اشکال:\n" + txt;
-
-    if(img){
-        // create temporary URL for WhatsApp
-        let reader = new FileReader();
-        reader.onload = function(e){
-            let link = e.target.result;
-            window.open("https://wa.me/989300565169?text=" + encodeURIComponent(msg + "\n[تصویر ارسال شد]"), "_blank");
-        };
-        reader.readAsDataURL(img);
-    } else {
-        window.open("https://wa.me/989300565169?text=" + encodeURIComponent(msg), "_blank");
-    }
-}
-</script>
-<script>
-function sendHW(num){
-    let file = document.getElementById("hw"+num).files[0];
-    if(!file){
-        alert("لطفاً فایل PDF انتخاب کنید.");
-        return;
-    }
-    let reader = new FileReader();
-    reader.onload = function(e){
-        let msg = "ارسال تکلیف جلسه " + num + "\n[فایل PDF ارسال شد]";
-        window.open("https://wa.me/989300565169?text=" + encodeURIComponent(msg), "_blank");
-    };
-    reader.readAsDataURL(file);
-}
-</script>
-</body>
-</html>
 
 
 
