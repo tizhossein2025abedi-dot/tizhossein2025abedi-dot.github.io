@@ -1,0 +1,18 @@
+{
+  "students": [
+    {
+      "id": "t1",
+      "username": "teacher",
+      "name": "مدیر",
+      "phone": "",
+      "pass": "admin2025",
+      "approved": true,
+      "role": "teacher",
+      "courses": []
+    }
+  ],
+  "sessions": [],
+  "assignments": [],
+  "quizzes": [],
+  "qa": []
+}
