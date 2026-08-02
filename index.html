@@ -403,18 +403,38 @@ font-size:22px;
 
 @media(max-width:992px){
 
-.menu,
+.menu{
+display:flex !important;
+position:static;
+flex-direction:row;
+gap:14px;
+background:none;
+padding:0;
+margin:0;
+}
 
 .actions{
-
-display:none;
-
+display:flex !important;
+gap:8px;
 }
 
 .mobile-btn{
+display:none !important;
+}
 
-display:block;
+.logo img{
+width:42px;
+height:42px;
+}
 
+.logo h2{
+font-size:18px;
+}
+
+.profile-btn,
+.call-btn{
+padding:8px 12px;
+font-size:12px;
 }
 
 }
@@ -3397,3 +3417,4 @@ once:true
 });
 
 </script>
+
