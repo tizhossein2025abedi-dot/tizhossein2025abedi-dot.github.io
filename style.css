@@ -1,23 +1,215 @@
-@font-face{font-family:Vazirmatn;src:local('Vazirmatn');}
-*{box-sizing:border-box;font-family:Vazirmatn,Arial,sans-serif}
-body{margin:0;background:#060606;color:#eaf2ff;line-height:1.5}
-.wrap{max-width:1100px;margin:0 auto;padding:18px}
-.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.brand{color:#4da3ff;margin:0}
-nav a{color:#cdd7e6;margin-left:10px;text-decoration:none}
-.card{background:#0f1112;border:1px solid #222;padding:16px;border-radius:10px;margin-bottom:14px}
-.btn{display:inline-block;padding:10px 12px;border-radius:8px;background:#222;border:1px solid #2b2b2b;color:#eaf2ff;text-decoration:none}
-.btn.primary{background:#4da3ff;color:#000;border:none}
-.row{display:flex;gap:8px;flex-wrap:wrap}
-.course{width:100%;display:flex;gap:12px;align-items:center}
-.course .course-img{width:110px;height:70px;border-radius:8px;background:#1e3a8a}
-.course.large .course-img{width:220px;height:140px}
-.cards{display:flex;flex-wrap:wrap;gap:12px}
-.small{font-size:0.95rem}
-.muted{color:#9aa0a6}
-input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #222;background:#0b0b0b;color:#fff;margin-top:8px}
-footer{padding:18px;text-align:center;color:#7b8a99;border-top:1px solid #0e0e0e;margin-top:18px}
-.link{color:#9ad1ff}
-.hidden{display:none}
-.course h3, .course h4{margin:6px 0}
-.center{text-align:center}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon8568.eot');
+  src:  url('./fonts/icomoon8568.eot') format('embedded-opentype'),
+    url('./fonts/icomoon8568.ttf') format('truetype'),
+    url('./fonts/icomoon8568.woff') format('woff'),
+    url('./fonts/icomoon8568.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-art:before {
+  content: "\e923";
+}
+.icon-book:before {
+  content: "\e924";
+}
+.icon-chart-up:before {
+  content: "\e925";
+}
+.icon-chat:before {
+  content: "\e926";
+}
+.icon-check:before {
+  content: "\e927";
+}
+.icon-clock:before {
+  content: "\e928";
+}
+.icon-close:before {
+  content: "\e929";
+}
+.icon-computer-science:before {
+  content: "\e92a";
+}
+.icon-double-arrow-right:before {
+  content: "\e92b";
+}
+.icon-file:before {
+  content: "\e92c";
+}
+.icon-graduate:before {
+  content: "\e92d";
+}
+.icon-history:before {
+  content: "\e92e";
+}
+.icon-ideas:before {
+  content: "\e92f";
+}
+.icon-instructor:before {
+  content: "\e930";
+}
+.icon-language:before {
+  content: "\e931";
+}
+.icon-logical-thinking:before {
+  content: "\e932";
+}
+.icon-minus:before {
+  content: "\e933";
+}
+.icon-online-learning:before {
+  content: "\e934";
+}
+.icon-play:before {
+  content: "\e935";
+}
+.icon-play-border:before {
+  content: "\e936";
+}
+.icon-plus:before {
+  content: "\e937";
+}
+.icon-ratings:before {
+  content: "\e938";
+}
+.icon-reading:before {
+  content: "\e939";
+}
+.icon-star:before {
+  content: "\e93a";
+}
+.icon-star-dash:before {
+  content: "\e93b";
+}
+.icon-target:before {
+  content: "\e93c";
+}
+.icon-trophy:before {
+  content: "\e93d";
+}
+.icon-vision:before {
+  content: "\e93e";
+}
+.icon-account-1:before {
+  content: "\e900";
+}
+.icon-Analysis:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e903";
+}
+.icon-arrow:before {
+  content: "\e902";
+}
+.icon-arrow-up:before {
+  content: "\e904";
+}
+.icon-arrow-down:before {
+  content: "\e905";
+}
+.icon-business:before {
+  content: "\e906";
+}
+.icon-Call:before {
+  content: "\e907";
+}
+.icon-chart-up1:before {
+  content: "\e908";
+}
+.icon-computer-science1:before {
+  content: "\e909";
+}
+.icon-Digital-marketing:before {
+  content: "\e90a";
+}
+.icon-caret-right:before {
+  content: "\e90b";
+}
+.icon-caret-down:before {
+  content: "\e90c";
+}
+.icon-caret-up:before {
+  content: "\e90d";
+}
+.icon-caret-left:before {
+  content: "\e90e";
+}
+.icon-education:before {
+  content: "\e90f";
+}
+.icon-Email:before {
+  content: "\e910";
+}
+.icon-facebook:before {
+  content: "\e911";
+}
+.icon-Headphone-Women:before {
+  content: "\e912";
+}
+.icon-like:before {
+  content: "\e913";
+}
+.icon-linkedin:before {
+  content: "\e914";
+}
+.icon-Location:before {
+  content: "\e915";
+}
+.icon-neural:before {
+  content: "\e916";
+}
+.icon-Newsletter:before {
+  content: "\e917";
+}
+.icon-Online-learning:before {
+  content: "\e918";
+}
+.icon-portfolio:before {
+  content: "\e919";
+}
+.icon-Presentation:before {
+  content: "\e91a";
+}
+.icon-Search:before {
+  content: "\e91b";
+}
+.icon-Start-up:before {
+  content: "\e91c";
+}
+.icon-Technology:before {
+  content: "\e91d";
+}
+.icon-Telephone:before {
+  content: "\e91e";
+}
+.icon-twitter:before {
+  content: "\e91f";
+}
+.icon-webinar:before {
+  content: "\e920";
+}
+.icon-youtube:before {
+  content: "\e921";
+}
+.icon-pen:before {
+  content: "\e922";
+}
