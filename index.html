@@ -1,3436 +1,2209 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>آکادمی آتی نما</title>
-
-<meta name="description" content="آکادمی آتی نما آموزش هوش و استعداد تحلیلی - ریاضی - علوم - فارسی و مشاوره تحصیلی">
-
-<meta name="keywords" content="تیزهوشان, حسین عابدی, آتی نما, آموزش تیزهوشان،علوم،ریاضی،فارسی،مشاوره">
-
-<meta name="author" content="Hossein Abedi">
-
-<link rel="icon" href="https://uploadkon.ir/uploads/20c131_26%D9%84%DA%AF%D9%88-%D8%A2%D8%AA%DB%8C-%D9%86%D9%85%D8%A7-.jpeg">
-
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-
-<style>
-
-:root{
-
---main:#07172F;
---second:#102850;
---orange:#ff9800;
---orange2:#ff6500;
---white:#fff;
-
-}
-
-*{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Vazirmatn',sans-serif;
-
-}
-
-html{
-
-scroll-behavior:smooth;
-
-}
-
-body{
-
-background:#07172F;
-color:#fff;
-overflow-x:hidden;
-position:relative;
-
-}
-
-/* Background */
-
-body::before{
-
-content:"";
-position:fixed;
-top:-250px;
-left:-250px;
-width:650px;
-height:650px;
-background:#ff980018;
-filter:blur(140px);
-border-radius:50%;
-animation:bg1 12s infinite alternate;
-z-index:-2;
-
-}
-
-body::after{
-
-content:"";
-position:fixed;
-right:-250px;
-bottom:-250px;
-width:650px;
-height:650px;
-background:#005eff18;
-filter:blur(140px);
-border-radius:50%;
-animation:bg2 14s infinite alternate;
-z-index:-2;
-
-}
-
-@keyframes bg1{
-
-100%{
-
-transform:translate(120px,80px);
-
-}
-
-}
-
-@keyframes bg2{
-
-100%{
-
-transform:translate(-100px,-70px);
-
-}
-
-}
-
-.container{
-
-width:min(1320px,92%);
-margin:auto;
-
-}
-
-img{
-
-max-width:100%;
-
-display:block;
-
-}
-
-a{
-
-text-decoration:none;
-
-}
-
-.orange-btn{
-
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:18px 40px;
-border-radius:50px;
-background:linear-gradient(135deg,#ff9800,#ff6500);
-color:#fff;
-font-weight:800;
-transition:.35s;
-
-}
-
-.orange-btn:hover{
-
-transform:translateY(-6px);
-box-shadow:0 20px 45px rgba(255,152,0,.35);
-color:#fff;
-
-}
-
-.glass{
-
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(18px);
-border:1px solid rgba(255,255,255,.08);
-
-}
-
-.section-space{
-
-padding:130px 0;
-
-}
-
+<!-- saved from url=(0022)https://tizhossein2025abedi-dot.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آتی نما</title>
+    
+    <meta name="description" content=" ">
+    <script src="jquery.min.js"></script>
+    <script src="jquery.validate-unobtrusive.min.js"></script>
+    <script src="knockout-3.4.2.debug.js"></script>
+    <script src="knockout-3.4.2.js"></script>
+
+    <script src="toastr.min.js"></script>
+    <script src="toastr.js"></script>
+    <script src="main_1.js"></script>
+    <script src="eduact.js"></script>
+<link rel="apple-touch-icon" href="https://tizhossein2025abedi-dot.github.io/assets_2/images/fav.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tizhossein2025abedi-dot.github.io/assets_2/images/fav.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tizhossein2025abedi-dot.github.io/assets_2/images/fav.ico">
+<link rel="manifest" href="https://tizhossein2025abedi-dot.github.io/assets_2/images/fav.ico">
+
+
+
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-select.min.css">
+<link rel="stylesheet" href="animate.min.css">
+<link rel="stylesheet" href="all.min.css">
+<link rel="stylesheet" href="jquery-ui.css">
+
+<link rel="stylesheet" href="jarallax.css">
+<link rel="stylesheet" href="jquery.magnific-popup.css">
+<link rel="stylesheet" href="nouislider.min.css">
+<link rel="stylesheet" href="nouislider.pips.css">
+<link rel="stylesheet" href="odometer.min.css">
+<link rel="stylesheet" href="tiny-slider.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="owl.carousel.min.css">
+<link rel="stylesheet" href="owl.theme.default.min.css">
+<link href="toastr.css" rel="stylesheet">
+<link href="toastr.min.css" rel="stylesheet">
+ 
+ 
+
+<link href="swiper-bundle.min.css" rel="stylesheet">
+
+<!-- template styles -->
+<link rel="stylesheet" href="eduact.css">
+<link rel="stylesheet" href="eduact-dark.css">
+
+
+<style type="text/css" id="jarallax-clip-0">#jarallax-container-0 {
+            clip: rect(0 1905px 381px 0);
+            clip: rect(0, 1905px, 381px, 0);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }</style></head>
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+    
+    <div class="page-wrapper">
+<style type="text/css">
+    .main-menu .main-menu__list > li + li, .stricky-header .main-menu__list > li + li {
+        margin-right: 20px;
+    }
 </style>
 
-</head>
 
-<body>
-<style>
 
-/*==========================
-HEADER PREMIUM
-==========================*/
 
-header{
 
-position:fixed;
 
-top:18px;
 
-left:50%;
-
-transform:translateX(-50%);
-
-width:92%;
-
-z-index:9999;
-
-transition:.4s;
-
-}
-
-.navbar-premium{
-
-height:86px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-padding:0 30px;
-
-border-radius:25px;
-
-background:rgba(7,23,47,.75);
-
-backdrop-filter:blur(20px);
-
-border:1px solid rgba(255,255,255,.08);
-
-box-shadow:0 25px 60px rgba(0,0,0,.35);
-
-}
-
-.logo{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-}
-
-.logo img{
-
-width:60px;
-
-height:60px;
-
-border-radius:50%;
-
-border:2px solid rgba(255,255,255,.15);
-
-}
-
-.logo h2{
-
-font-size:26px;
-
-font-weight:900;
-
-margin:0;
-
-}
-
-.logo span{
-
-font-size:13px;
-
-color:#d8d8d8;
-
-}
-
-.menu{
-
-display:flex;
-
-gap:35px;
-
-}
-
-.menu a{
-
-color:white;
-
-font-weight:700;
-
-position:relative;
-
-transition:.35s;
-
-}
-
-.menu a::after{
-
-content:"";
-
-position:absolute;
-
-right:0;
-
-bottom:-8px;
-
-width:0;
-
-height:3px;
-
-background:#ff9800;
-
-border-radius:50px;
-
-transition:.35s;
-
-}
-
-.menu a:hover{
-
-color:#ff9800;
-
-}
-
-.menu a:hover::after{
-
-width:100%;
-
-}
-
-.actions{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-}
-
-.call-btn{
-
-padding:13px 28px;
-
-border-radius:50px;
-
-border:2px solid #ff9800;
-
-color:#fff;
-
-font-weight:700;
-
-transition:.35s;
-
-}
-
-.call-btn:hover{
-
-background:#ff9800;
-
-color:#fff;
-
-transform:translateY(-5px);
-
-}
-
-.profile-btn{
-
-padding:14px 30px;
-
-border-radius:50px;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-color:white;
-
-font-weight:800;
-
-transition:.35s;
-
-box-shadow:0 15px 35px rgba(255,152,0,.35);
-
-}
-
-.profile-btn:hover{
-
-transform:translateY(-5px);
-
-color:white;
-
-}
-
-.mobile-btn{
-
-display:none;
-
-width:52px;
-
-height:52px;
-
-border:none;
-
-border-radius:16px;
-
-background:#102850;
-
-color:#fff;
-
-font-size:22px;
-
-}
-
-@media(max-width:992px){
-
-.navbar-premium{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:6px;
-padding:10px 0;
-flex-wrap:nowrap;
-}
-
-.menu{
-display:flex !important;
-position:static;
-flex-direction:row;
-gap:8px;
-background:none;
-padding:0;
-margin:0;
-}
-
-.menu a{
-font-size:11px;
-}
-
-.actions{
-display:flex !important;
-gap:4px;
-align-items:center;
-}
-
-.call-btn,
-.profile-btn{
-padding:5px 7px;
-font-size:10px;
-white-space:nowrap;
-border-radius:18px;
-}
-
-.logo img{
-width:36px;
-height:36px;
-}
-
-.logo h2{
-font-size:16px;
-}
-
-.mobile-btn{
-display:none !important;
-}
-
-}
-
-</style>
-
-<header>
-
-<div class="container">
-
-<div class="navbar-premium">
-
-<div class="logo">
-
-<img src="https://uploadkon.ir/uploads/20c131_26%D9%84%DA%AF%D9%88-%D8%A2%D8%AA%DB%8C-%D9%86%D9%85%D8%A7-.jpeg">
-
-<div>
-
-<h2>آتی نما</h2>
-
-<span>Academy</span>
-
-</div>
-
-</div>
-
-<nav class="menu">
-
-<a href="#">خانه</a>
-
-<a href="#about">درباره ما</a>
-
-<a href="#courses">دوره‌ها</a>
-
-<a href="#contact">تماس با ما</a>
-
-</nav>
-
-<div class="actions">
-
-<a href="tel:09300565169" class="call-btn">
-
-<i class="fa-solid fa-phone"></i>
-
-تماس با ما
-
-</a>
-
-<a href="https://atinma-tizhoshan1391.eazm.ir/main.php" target="_blank" class="profile-btn">
-
-<i class="fa-solid fa-user"></i>
-
-پروفایل من
-
-</a>
-
-</div>
-
-<button class="mobile-btn">
-
-<i class="fa-solid fa-bars"></i>
-
-</button>
-
-</div>
-
-</div>
-
-</header>
-<style>
-
-/*==========================
-HERO
-==========================*/
-
-.hero{
-
-padding:160px 0 110px;
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.hero::before{
-
-content:"";
-
-position:absolute;
-
-top:-250px;
-
-left:-250px;
-
-width:600px;
-
-height:600px;
-
-background:rgba(255,152,0,.08);
-
-filter:blur(140px);
-
-border-radius:50%;
-
-}
-
-.hero-container{
-
-display:grid;
-
-grid-template-columns:1.05fr .95fr;
-
-align-items:center;
-
-gap:70px;
-
-}
-
-/*==========================
-RIGHT
-==========================*/
-
-.hero-content{
-
-position:relative;
-
-z-index:5;
-
-}
-
-.hero-badge{
-
-display:inline-flex;
-
-align-items:center;
-
-gap:10px;
-
-padding:10px 22px;
-
-background:rgba(255,152,0,.12);
-
-border:1px solid rgba(255,152,0,.25);
-
-border-radius:50px;
-
-color:#ff9800;
-
-font-weight:700;
-
-margin-bottom:25px;
-
-}
-
-.hero-title{
-
-font-size:68px;
-
-font-weight:900;
-
-line-height:90px;
-
-margin-bottom:25px;
-
-}
-
-.hero-title span{
-
-color:#ff9800;
-
-}
-
-.hero-desc{
-
-font-size:18px;
-
-line-height:38px;
-
-color:#d7d7d7;
-
-margin-bottom:40px;
-
-max-width:620px;
-
-}
-
-.hero-buttons{
-
-display:flex;
-
-gap:18px;
-
-flex-wrap:wrap;
-
-}
-
-.hero-buttons a{
-
-padding:17px 38px;
-
-border-radius:50px;
-
-font-weight:800;
-
-transition:.35s;
-
-}
-
-.hero-buttons .btn-main{
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-color:white;
-
-box-shadow:0 20px 45px rgba(255,152,0,.25);
-
-}
-
-.hero-buttons .btn-main:hover{
-
-transform:translateY(-5px);
-
-}
-
-.hero-buttons .btn-border{
-
-border:2px solid rgba(255,255,255,.12);
-
-color:white;
-
-}
-
-.hero-buttons .btn-border:hover{
-
-background:white;
-
-color:#07172F;
-
-}
-
-/*==========================
-LEFT
-==========================*/
-
-.hero-image{
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-position:relative;
-
-}
-
-.hero-circle{
-
-width:520px;
-
-height:520px;
-
-border-radius:50%;
-
-background:linear-gradient(135deg,#ff9800,#ff6a00);
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-position:relative;
-
-box-shadow:0 0 80px rgba(255,152,0,.25);
-
-}
-
-.hero-circle::before{
-
-content:"";
-
-position:absolute;
-
-inset:-18px;
-
-border:4px dashed rgba(255,152,0,.7);
-
-border-radius:50%;
-
-animation:ring 18s linear infinite;
-
-}
-
-.teacher-photo{
-
-width:455px;
-
-height:455px;
-
-overflow:hidden;
-
-border-radius:50%;
-
-position:relative;
-
-z-index:2;
-
-background:#07172F;
-
-}
-
-.teacher-photo img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-}
-
-@keyframes ring{
-
-100%{
-
-transform:rotate(360deg);
-
-}
-
-}
-
-/*==========================
-RESPONSIVE
-==========================*/
-
-@media(max-width:992px){
-
-.hero-container{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
-}
-
-.hero-content{
-
-order:2;
-
-}
-
-.hero-image{
-
-order:1;
-
-margin-bottom:50px;
-
-}
-
-.hero-title{
-
-font-size:48px;
-
-line-height:65px;
-
-}
-
-.hero-buttons{
-
-justify-content:center;
-
-}
-
-.hero-circle{
-
-width:360px;
-
-height:360px;
-
-}
-
-.teacher-photo{
-
-width:310px;
-
-height:310px;
-
-}
-
-}
-
-</style>
-
-<section class="hero" id="home">
-
-<div class="container">
-
-<div class="hero-container">
-
-<!-- متن سمت راست -->
-
-<div class="hero-content" data-aos="fade-left">
-
-<div class="hero-badge">
-
-<i class="fa-solid fa-graduation-cap"></i>
-
-آموزش تخصصی آزمون تیزهوشان
-
-</div>
-
-<h1 class="hero-title">
-
-آغاز موفقیت در
-
-<br>
-
-<span>تیزهوشان با آتی نما</span>
-
-</h1>
-
-<p class="hero-desc">
-
-آکادمی آتی نما <b>استاد حسین عابدی</b> برگزارکننده دوره‌های تخصصی آمادگی آزمون تیزهوشان است. آموزش مفهومی، برنامه‌ریزی اختصاصی، آزمون‌های استاندارد و پشتیبانی مستمر، مسیر موفقیت شما را هموار می‌کند.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#courses" class="btn-main">
-
-مشاهده دوره‌ها
-
-</a>
-
-<a href="#contact" class="btn-border">
-
-تماس با ما
-
-</a>
-
-</div>
-
-</div>
-
-<!-- عکس سمت چپ -->
-
-<div class="hero-image" data-aos="zoom-in">
-
-<div class="hero-circle">
-
-<div class="teacher-photo">
-
-<img src="https://cdn.imgurl.ir/uploads/y183796_882020.jpg" alt="استاد حسین عابدی">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+<div class=" ">
+    <header class="main-header">
+        <nav class="main-menu">
+            <div class="container">
+                <div class="main-menu__logo">
+					<a href="https://tizhossein2025abedi-dot.github.io/">
+						
+                        <img src="1.jpg" width="130px" height="130px" alt="حسین عابدی">
+                    </a>
+                </div><!-- /.main-menu__logo -->
+                <div class="main-menu__nav">
+                    <ul class="main-menu__list">
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">صفحه اصلی</a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://cdn.imgurl.ir/uploads/u5198__.pdf">دوره ها</a>
+                            <ul>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/">دوره ابتدایی</a></li>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/">دوره اول متوسطه</a></li>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/">تیزهوشان</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">آزمون ها</a>
+                        </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">درباره ما</a>
+                        </li>
+                            <li>
+                                <a href="http://atinma-tizhoshan1391.eazm.ir/main.php"> پنل کاربری </a>
+                            </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">بلاگ</a>
+                        </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">دوره های انتخاب شده</a>
+                        </li>
+                    </ul>
+                </div><!-- /.main-menu__nav -->
+                <div class="main-menu__left">
+                    <a href="https://tizhossein2025abedi-dot.github.io/" class="main-menu__toggler mobile-nav__toggler">
+                        <i class="fa fa-bars" style="color:#fff;"></i>
+                    </a><!-- /.mobile menu btn -->
+                    <a href="https://tizhossein2025abedi-dot.github.io/" class="main-menu__search search-toggler">
+                        <i class="icon-Search"></i>
+                    </a>
+                        <div style="margin-right: 15px;" class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> پروفایل من</button>
+                            <ul class="dropdown-menu" style="">
+                                <li><a class="dropdown-item" href="http://atinma-tizhoshan1391.eazm.ir/main.php">ورود به پنل </a></li>
+                                <li><a class="dropdown-item" href="https://tizhossein2025abedi-dot.github.io/">خروج</a></li>
+
+                            </ul>
+                        </div>
+
+                  
+                    <a href="تماس با ما .jpg" class="eduact-btn"><span class="eduact-btn__curve"></span>  تماس با ما</a> 
+                </div><!-- /.main-menu__left -->
+            </div><!-- /.container -->
+        </nav>
+ 
+
+<div id="changePasswordModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog loginmodal-container" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">تغییر رمز عبور</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="changePasswordForm" novalidate="novalidate">
+                    <div class="form-group">
+                        <label for="ChangePassword_Password">کلمه عبور جديد</label>
+                        <input type="password" class="form-control" placeholder="رمز عبور جدید" data-bind="value: changePassword().Password" data-val="true" data-val-maxlength="کلمه عبور بایستی حداکثر 16 کاراکتر باشد" data-val-maxlength-max="16" data-val-minlength="کلمه عبور بایستی حداقل 6 کاراکتر باشد" data-val-minlength-min="6" data-val-required="کلمه عبور نبایستی خالی باشد" id="ChangePassword_Password" maxlength="16" name="ChangePassword.Password">
+                        <span class="field-validation-valid" data-valmsg-for="ChangePassword.Password" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="ChangePassword_RePassword">تکرار کلمه عبور جديد</label>
+                        <input type="password" class="form-control" placeholder="تکرار رمز عبور جدید" data-bind="value: changePassword().RePassword" data-val="true" data-val-equalto="تکرار کلمه عبور جدید با کلمه عبور جدید یکسان نمی‌باشد" data-val-equalto-other="*.Password" id="ChangePassword_RePassword" name="ChangePassword.RePassword">
+                        <span class="field-validation-valid" data-valmsg-for="ChangePassword.RePassword" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="center " style="margin-top:30px">
+                        <button type="submit" class="btn btn-info">تغییر رمز عبور</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>    </header>
+
+</div>         
+<div class="stricky-header stricked-menu main-menu">
+    <div class="sticky-header__content">
+            <div class="container">
+                <div class="main-menu__logo">
+					<a href="https://tizhossein2025abedi-dot.github.io/">
+						
+                        <img src="1.jpg" width="130px" height="130px" alt="حسین عابدی">
+                    </a>
+                </div><!-- /.main-menu__logo -->
+                <div class="main-menu__nav">
+                    <ul class="main-menu__list">
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">صفحه اصلی</a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://tizhossein2025abedi-dot.github.io/">دوره ها</a>
+                            <ul>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/">دوره ابتدایی</a></li>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/">دوره اول متوسطه</a></li>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/">تیزهوشان</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">آزمون ها</a>
+                        </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">درباره ما</a>
+                        </li>
+                            <li>
+                                <a href="https://tizhossein2025abedi-dot.github.io/"> پنل کاربری </a>
+                            </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">بلاگ</a>
+                        </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">دوره های انتخاب شده</a>
+                        </li>
+                    </ul>
+                </div><!-- /.main-menu__nav -->
+                <div class="main-menu__left">
+                    <a href="https://tizhossein2025abedi-dot.github.io/" class="main-menu__toggler mobile-nav__toggler">
+                        <i class="fa fa-bars" style="color:#fff;"></i>
+                    </a><!-- /.mobile menu btn -->
+                    <a href="https://tizhossein2025abedi-dot.github.io/" class="main-menu__search search-toggler">
+                        <i class="icon-Search"></i>
+                    </a>
+                        <div style="margin-right: 15px;" class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> پروفایل من</button>
+                            <ul class="dropdown-menu" style="">
+                                <li><a class="dropdown-item" href="http://atinma-tizhoshan1391.eazm.ir/">حسین عزیز</a></li>
+                                <li><a class="dropdown-item" href="https://tizhossein2025abedi-dot.github.io/">خروج</a></li>
+
+                            </ul>
+                        </div>
+
+                  
+                    <a href="تماس با ما .jpg" class="eduact-btn"><span class="eduact-btn__curve"></span>  تماس با ما</a> 
+                </div><!-- /.main-menu__left -->
+            </div><!-- /.container -->
+        </div><!-- /.sticky-header__content -->
+</div><!-- /.stricky-header -->
+<!--Hero Banner Start-->
+<section class="hero-banner" style="background-image: url(/assets_2/images/p_4/shapes/banner-bg-لگو.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="hero-banner__content">
+                    <div class="hero-banner__bg-shape1 wow zoomIn" data-wow-delay="300ms">
+                        <div class="hero-banner__bg-round">
+                            <div class="hero-banner__bg-round-border"></div>
+                        </div>
+                    </div>
+                    <h2 class="hero-banner__title wow fadeInUp" data-wow-delay="400ms" style="text-align:center;">
+                       آغاز موفقیت  در تیزهوشان با
+                    </h2>
+                    <h2 class="hero-banner__title wow fadeInUp" data-wow-delay="400ms" style="text-align:center;">
+                        <span style="color:#f57005">آتی نما</span>
+                    </h2>
+                    <p class="hero-banner__text wow fadeInUp" data-wow-delay="500ms" style="text-align:justify;">
+
+
+                        سلام، من حسین عابدی، معروف به آتی نما، مدرس تخصصی هوش و استعداد تحلیلی هستم. با سال‌ها تجربه در تدریس و طراحی آزمون‌های تیزهوشان، اکنون اینجا هستم تا به شما کمک کنم بهترین نتیجه را در مهم‌ترین آزمون‌های تحصیلی بگیرید.
+                        در دوره‌های آموزشی من، شما نه تنها برای قبولی در تیزهوشان آماده می‌شوید، بلکه توانایی‌های تحلیلی و هوش خود را به سطحی می‌رسانید که برای تمام چالش‌های تحصیلی آینده‌تان آماده خواهید بود.
+                        اگر می‌خواهید در کنار یادگیری مفاهیم، اعتماد به نفس و استراتژی‌های موفقیت در امتحانات را هم به دست بیاورید، اینجا مکان مناسبی برای شروع شماست. تجربه‌ای متفاوت از آموزش و راهی مطمئن به سوی قبولی در تیزهوشان و موفقیت‌های آینده!
+
+                        <img src="banner-1-shape-لگو.png" alt="آتی نما">
+                    </p>
+                    <div class="hero-banner__btn wow fadeInUp" data-wow-delay="600ms">
+                        <a href="https://tizhossein2025abedi-dot.github.io/" class="eduact-btn eduact-btn-second"><span class="eduact-btn__curve"></span>مشاهده دوره ها <i class="icon-arrow"></i></a>
+
+                    </div><!-- banner-btn -->
+                </div><!-- banner-content -->
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-banner__thumb wow fadeInUp" data-wow-delay="700ms">
+                    <img src="Hossein.jpg">
+
+
+                    <div class="hero-banner__cap wow slideInDown" data-wow-delay="800ms"><img src="banner-cap.png" alt="آتی نما"></div><!-- banner-cap -->
+                    <div class="hero-banner__star wow slideInDown" data-wow-delay="850ms"><img src="banner-star.png" alt="آتی نما"></div><!-- banner-star -->
+                    <div class="hero-banner__map wow slideInDown" data-wow-delay="900ms"><img src="banner-map.png" alt="آتی نما"></div><!-- banner-map -->
+                    <div class="hero-banner__video wow zoomIn" data-wow-delay="950ms">
+                        <a href="معرفی دوره" class="video-popup ">
+                            <span class="icon-play"></span>
+                        </a>
+                    </div><!-- banner-video -->
+                    <div class="hero-banner__book wow slideInUp" data-wow-delay="1000ms"><img src="banner-book.png" alt="آتی نما"></div><!-- banner-book -->
+                    <div class="hero-banner__star2 wow slideInUp" data-wow-delay="1050ms"><img src="banner-star2.png" alt="آتی نما"></div><!-- banner-star -->
+                    <div class="hero-banner__cart wow slideInUp" data-wow-delay="1100ms">
+                        <div class="hero-banner__cart__thumb"><img src="banner-author.png" alt="آتی نما"></div>
+                        <div class="hero-banner__cart__content">
+                            <div class="hero-banner__cart__content-inner">
+                                <h4 class="hero-banner__cart__title"> جدیدترین دوره ها</h4>
+                                <p class="hero-banner__cart__text"> هوش و استعداد تحلیلی ششم</p>
+                                <a href="https://tizhossein2025abedi-dot.github.io/" class="eduact-btn">
+                                    <span class="eduact-btn__curve">  </span>
+                                    <i class="icon-arrow"></i>
+                                </a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 38">
+                                    <path d="M0.702945 55.648L108.145 0.179688L87.0803 78.7928L0.702945 55.648Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-banner__border wow fadeInUp" data-wow-delay="1100ms"></div><!-- banner-border -->
 </section>
-<style>
-
-/*==========================
-WHY ATINMA
-==========================*/
-
-.features{
-
-padding:130px 0;
-
-position:relative;
-
-}
-
-.section-title{
-
-text-align:center;
-
-margin-bottom:70px;
-
-}
-
-.section-title span{
-
-display:inline-block;
-
-padding:10px 24px;
-
-background:rgba(255,152,0,.12);
-
-color:#ff9800;
-
-border-radius:50px;
-
-font-weight:700;
-
-margin-bottom:18px;
-
-}
-
-.section-title h2{
-
-font-size:56px;
-
-font-weight:900;
-
-margin-bottom:18px;
-
-}
-
-.section-title p{
-
-max-width:720px;
-
-margin:auto;
-
-line-height:36px;
-
-color:#d5d5d5;
-
-}
-
-.feature-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:30px;
-
-}
-
-.feature-card{
-
-padding:35px 30px;
-
-border-radius:28px;
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(18px);
-
-border:1px solid rgba(255,255,255,.08);
-
-transition:.4s;
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.feature-card:hover{
-
-transform:translateY(-12px);
-
-border-color:#ff9800;
-
-box-shadow:0 30px 70px rgba(255,152,0,.18);
-
-}
-
-.feature-card::before{
-
-content:"";
-
-position:absolute;
-
-top:-120px;
-
-left:-120px;
-
-width:220px;
-
-height:220px;
-
-border-radius:50%;
-
-background:rgba(255,152,0,.08);
-
-transition:.5s;
-
-}
-
-.feature-card:hover::before{
-
-transform:scale(1.5);
-
-}
-
-.icon-box{
-
-width:78px;
-
-height:78px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-border-radius:22px;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-font-size:30px;
-
-margin-bottom:25px;
-
-box-shadow:0 15px 30px rgba(255,152,0,.25);
-
-}
-
-.feature-card h3{
-
-font-size:25px;
-
-font-weight:900;
-
-margin-bottom:18px;
-
-}
-
-.feature-card p{
-
-line-height:34px;
-
-color:#d5d5d5;
-
-margin:0;
-
-}
-
-.number{
-
-position:absolute;
-
-left:20px;
-
-top:15px;
-
-font-size:58px;
-
-font-weight:900;
-
-color:rgba(255,255,255,.05);
-
-}
-
-@media(max-width:1200px){
-
-.feature-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.feature-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.section-title h2{
-
-font-size:40px;
-
-}
-
-}
-
-</style>
-
-<section class="features">
-
-<div class="container">
-
-<div class="section-title" data-aos="fade-up">
-
-<span>مزایای آکادمی</span>
-
-<h2>چرا آتی نما؟</h2>
-
-<p>
-
-در آکادمی آتی نما تلاش کرده‌ایم با استفاده از آموزش استاندارد، برنامه‌ریزی حرفه‌ای و پشتیبانی مستمر بهترین شرایط را برای دانش‌آموزان فراهم کنیم.
-
-</p>
-
-</div>
-
-<div class="feature-grid">
-
-<div class="feature-card" data-aos="fade-up">
-
-<div class="number">01</div>
-
-<div class="icon-box">
-
-<i class="fa-solid fa-book-open"></i>
-
-</div>
-
-<h3>آموزش مفهومی</h3>
-
-<p>
-
-آموزش کامل مباحث به زبان ساده همراه با حل تست و رفع اشکال.
-
-</p>
-
-</div>
-
-<div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-
-<div class="number">02</div>
-
-<div class="icon-box">
-
-<i class="fa-solid fa-clipboard-check"></i>
-
-</div>
-
-<h3>آزمون‌های استاندارد</h3>
-
-<p>
-
-برگزاری آزمون‌های منظم جهت سنجش پیشرفت و تحلیل عملکرد دانش‌آموز.
-
-</p>
-
-</div>
-
-<div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-
-<div class="number">03</div>
-
-<div class="icon-box">
-
-<i class="fa-solid fa-chart-line"></i>
-
-</div>
-
-<h3>برنامه‌ریزی تخصصی</h3>
-
-<p>
-
-برنامه مطالعاتی شخصی‌سازی شده متناسب با شرایط هر دانش‌آموز.
-
-</p>
-
-</div>
-
-<div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-
-<div class="number">04</div>
-
-<div class="icon-box">
-
-<i class="fa-solid fa-headset"></i>
-
-</div>
-
-<h3>پشتیبانی آموزشی</h3>
-
-<p>
-
-پاسخگویی، رفع اشکال و همراهی دانش‌آموز تا پایان دوره آموزشی.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+<!--Hero Banner End-->
+<!-- Service Start -->
+<section class="service-one">
+    <div class="service-one__bg" style="background:#121534;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="service-one__item">
+                    <div class="service-one__wrapper">
+                        <div class="service-one__icon">
+                            <span class="icon-education"></span>
+                        </div><!-- /.service-icon -->
+                        <h3 class="service-one__title">
+                            <a href="https://tizhossein2025abedi-dot.github.io/">
+                                کالسهای تعاملی و چالشی
+                            </a>
+                        </h3><!-- /.service-title -->
+                        <p class="service-one__text"> کلاس‌های پویا با تمرینات چالشی برای تقویت تفکر تحلیلی و مهارت‌های حل مسئله.</p><!-- /.service-content -->
+
+                    </div>
+                </div><!-- /.service-card-one -->
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                <div class="service-one__item">
+                    <div class="service-one__wrapper">
+                        <div class="service-one__icon">
+                            <span class="icon-business"></span>
+                        </div><!-- /.service-icon -->
+                        <h3 class="service-one__title">
+                            <a href="https://tizhossein2025abedi-dot.github.io/">برگزاری آزمون  های شبیه ساز</a>
+                        </h3><!-- /.service-title -->
+                        <p class="service-one__text">کلاس‌های فشرده برای مرور مطالب و آمادگی کامل قبل از آزمون‌.</p><!-- /.service-content -->
+
+                    </div>
+                </div><!-- /.service-card-one -->
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                <div class="service-one__item">
+                    <div class="service-one__wrapper">
+                        <div class="service-one__icon">
+                            <span class="icon-webinar"></span>
+                        </div><!-- /.service-icon -->
+                        <h3 class="service-one__title">
+                            <a href="https://tizhossein2025abedi-dot.github.io/">رصد پیشرفت تحصیلی</a>
+                        </h3><!-- /.service-title -->
+                        <p class="service-one__text">پیگیری مستمر پیشرفت دانش‌آموزان برای شناسایی نقاط قوت و نیاز به بهبود.</p><!-- /.service-content -->
+
+                    </div>
+                </div><!-- /.service-card-one -->
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                <div class="service-one__item">
+                    <div class="service-one__wrapper">
+                        <div class="service-one__icon">
+                            <span class="icon-neural"></span>
+                        </div><!-- /.service-icon -->
+                        <h3 class="service-one__title">
+                            <a href="https://tizhossein2025abedi-dot.github.io/"> جزوات تالیفی حرفه‌ای</a>
+                        </h3><!-- /.service-title -->
+                        <p class="service-one__text">جزوات تخصصی و جامع برای تسلط کامل بر مفاهیم درسی و آمادگی بهتر. </p><!-- /.service-content -->
+
+
+                    </div>
+                </div><!-- /.service-card-one -->
+            </div>
+        </div>
+    </div>
 </section>
-<style>
-
-/*==========================
-ABOUT ACADEMY
-==========================*/
-
-.about{
-
-padding:130px 0;
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.about-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:90px;
-
-align-items:center;
-
-}
-
-.about-image{
-
-position:relative;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-}
-
-.about-image::before{
-
-content:"";
-
-position:absolute;
-
-width:520px;
-
-height:520px;
-
-border-radius:40px;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-opacity:.08;
-
-transform:rotate(-10deg);
-
-}
-
-.about-photo{
-
-position:relative;
-
-width:430px;
-
-height:540px;
-
-border-radius:35px;
-
-overflow:hidden;
-
-border:3px solid rgba(255,255,255,.08);
-
-box-shadow:0 35px 80px rgba(0,0,0,.35);
-
-z-index:5;
-
-}
-
-.about-photo img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-transition:.6s;
-
-}
-
-.about-photo:hover img{
-
-transform:scale(1.08);
-
-}
-
-.exp-box{
-
-position:absolute;
-
-bottom:25px;
-
-left:-25px;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(20px);
-
-padding:25px;
-
-border-radius:22px;
-
-border:1px solid rgba(255,255,255,.08);
-
-z-index:20;
-
-}
-
-.exp-box h2{
-
-font-size:55px;
-
-font-weight:900;
-
-color:#ff9800;
-
-margin-bottom:5px;
-
-}
-
-.exp-box p{
-
-margin:0;
-
-font-size:15px;
-
-color:#ddd;
-
-}
-
-.about-content span{
-
-display:inline-block;
-
-padding:10px 22px;
-
-background:rgba(255,152,0,.12);
-
-color:#ff9800;
-
-border-radius:50px;
-
-font-weight:700;
-
-margin-bottom:18px;
-
-}
-
-.about-content h2{
-
-font-size:55px;
-
-font-weight:900;
-
-line-height:80px;
-
-margin-bottom:25px;
-
-}
-
-.about-content p{
-
-line-height:38px;
-
-font-size:17px;
-
-color:#d5d5d5;
-
-margin-bottom:35px;
-
-}
-
-.about-list{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:20px;
-
-margin-bottom:40px;
-
-}
-
-.about-item{
-
-display:flex;
-
-align-items:center;
-
-gap:18px;
-
-padding:22px;
-
-border-radius:22px;
-
-background:rgba(255,255,255,.05);
-
-border:1px solid rgba(255,255,255,.08);
-
-transition:.35s;
-
-}
-
-.about-item:hover{
-
-transform:translateY(-8px);
-
-border-color:#ff9800;
-
-}
-
-.about-item i{
-
-width:65px;
-
-height:65px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-border-radius:18px;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-font-size:24px;
-
-}
-
-.about-item h4{
-
-margin:0;
-
-font-size:18px;
-
-font-weight:800;
-
-}
-
-.about-item small{
-
-color:#d5d5d5;
-
-}
-
-@media(max-width:992px){
-
-.about-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.about-content{
-
-text-align:center;
-
-}
-
-.about-list{
-
-grid-template-columns:1fr;
-
-}
-
-.about-photo{
-
-width:100%;
-
-height:450px;
-
-}
-
-.exp-box{
-
-left:50%;
-
-transform:translateX(-50%);
-
-}
-
-}
-
-</style>
-
-<section class="about" id="about">
-
-<div class="container">
-
-<div class="about-grid">
-
-<div class="about-image" data-aos="fade-left">
-
-<div class="about-photo">
-
-<img src="https://uploadkon.ir/uploads/a36b04_26حسین.jpg" alt="آکادمی آتی نما">
-
-</div>
-
-<div class="exp-box">
-
-<h2>2+</h2>
-
-<p>سال سابقه آموزشی</p>
-
-</div>
-
-</div>
-
-<div class="about-content" data-aos="fade-right">
-
-<span>درباره آکادمی</span>
-
-<h2>
-
-آموزش تخصصی تیزهوشان با آکادمی آتی نما
-
-</h2>
-
-<p>
-
-آکادمی آتی نما با هدف آماده‌سازی دانش‌آموزان برای آزمون‌های تیزهوشان فعالیت می‌کند. در این مجموعه آموزش‌ها به‌صورت کاملاً مفهومی، همراه با آزمون‌های استاندارد، برنامه‌ریزی اختصاصی و پشتیبانی آموزشی ارائه می‌شود تا دانش‌آموزان با آمادگی کامل در آزمون‌ها شرکت کنند.
-
-</p>
-
-<div class="about-list">
-
-<div class="about-item">
-
-<i class="fa-solid fa-book-open"></i>
-
-<div>
-
-<h4>آموزش مفهومی</h4>
-
-<small>تدریس روان و کاملاً استاندارد</small>
-
-</div>
-
-</div>
-
-<div class="about-item">
-
-<i class="fa-solid fa-clipboard-check"></i>
-
-<div>
-
-<h4>آزمون‌های منظم</h4>
-
-<small>تحلیل کامل عملکرد دانش‌آموز</small>
-
-</div>
-
-</div>
-
-<div class="about-item">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<div>
-
-<h4>برنامه‌ریزی تخصصی</h4>
-
-<small>مطابق سطح هر دانش‌آموز</small>
-
-</div>
-
-</div>
-
-<div class="about-item">
-
-<i class="fa-solid fa-headset"></i>
-
-<div>
-
-<h4>پشتیبانی آموزشی</h4>
-
-<small>همراه شما تا پایان دوره</small>
-
-</div>
-
-</div>
-
-</div>
-
-<a href="#courses" class="orange-btn">
-
-مشاهده دوره‌ها
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<style>
-
-/*==========================
-COURSES
-==========================*/
-
-.courses{
-
-padding:130px 0;
-
-}
-
-.course-title{
-
-text-align:center;
-
-margin-bottom:70px;
-
-}
-
-.course-title span{
-
-display:inline-block;
-
-padding:10px 24px;
-
-background:rgba(255,152,0,.12);
-
-color:#ff9800;
-
-border-radius:50px;
-
-font-weight:700;
-
-margin-bottom:18px;
-
-}
-
-.course-title h2{
-
-font-size:56px;
-
-font-weight:900;
-
-margin-bottom:20px;
-
-}
-
-.course-title p{
-
-max-width:720px;
-
-margin:auto;
-
-line-height:36px;
-
-color:#d5d5d5;
-
-}
-
-.course-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:30px;
-
-}
-
-.course-card{
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(18px);
-
-border:1px solid rgba(255,255,255,.08);
-
-border-radius:28px;
-
-overflow:hidden;
-
-transition:.35s;
-
-}
-
-.course-card:hover{
-
-transform:translateY(-10px);
-
-border-color:#ff9800;
-
-}
-
-.course-image{
-
-height:220px;
-
-overflow:hidden;
-
-}
-
-.course-image img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-transition:.5s;
-
-}
-
-.course-card:hover img{
-
-transform:scale(1.08);
-
-}
-
-.course-body{
-
-padding:25px;
-
-}
-
-.course-body h3{
-
-font-size:24px;
-
-font-weight:900;
-
-margin-bottom:15px;
-
-}
-
-.course-body p{
-
-line-height:32px;
-
-color:#d5d5d5;
-
-margin-bottom:18px;
-
-}
-
-.price{
-
-font-size:30px;
-
-font-weight:900;
-
-color:#ff9800;
-
-margin-bottom:22px;
-
-}
-
-.course-btn{
-
-display:block;
-
-width:100%;
-
-padding:15px;
-
-border:none;
-
-border-radius:15px;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-color:white;
-
-font-weight:800;
-
-cursor:pointer;
-
-transition:.35s;
-
-}
-
-.course-btn:hover{
-
-transform:translateY(-4px);
-
-}
-
-/* Modal */
-
-.modal-content{
-
-background:#07172F;
-
-border-radius:25px;
-
-border:1px solid rgba(255,255,255,.08);
-
-color:white;
-
-}
-
-.modal-header{
-
-border:none;
-
-}
-
-.modal-body img{
-
-width:100%;
-
-height:250px;
-
-object-fit:cover;
-
-border-radius:20px;
-
-margin-bottom:20px;
-
-}
-
-.modal-body ul{
-
-line-height:38px;
-
-padding-right:20px;
-
-}
-
-.call-buttons{
-
-display:flex;
-
-gap:15px;
-
-margin-top:25px;
-
-}
-
-.call-buttons a{
-
-flex:1;
-
-padding:15px;
-
-text-align:center;
-
-border-radius:15px;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-color:white;
-
-font-weight:800;
-
-}
-
-@media(max-width:1200px){
-
-.course-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.course-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-</style>
-
-<section class="courses" id="courses">
-
-<div class="container">
-
-<div class="course-title">
-
-<span>دوره‌های آموزشی</span>
-
-<h2>دوره‌های آکادمی آتی نما</h2>
-
-<p>
-
-آتی نما رمز موفقیت
-
-</p>
-
-</div>
-
-<div class="course-grid">
-
-<!-- دوره -->
-
-<div class="course-card">
-
-<div class="course-image">
-
-<!-- لینک عکس دوره را فقط اینجا عوض کن -->
-
-<img src="https://uploadkon.ir/uploads/d9ce02_26پک-کامل-هوش.jpg">
-
-</div>
-
-<div class="course-body">
-
-<h3>پک کامل تیزهوشان پایه ششم</h3>
-
-<p>آمادگی کامل برای آزمون تیزهوشان</p>
-
-<div class="price">21/500/000 تومان</div>
-
-<button class="course-btn"
-
-data-bs-toggle="modal"
-
-data-bs-target="#course1">
-
-مشاهده دوره
-
-</button>
-
-</div>
-
-</div>
-
-<!-- سه کارت دیگر را با تغییر نام، قیمت و عکس کپی کن -->
-
-</div>
-
-</div>
-
+<!-- Service End -->
+<!-- About Start -->
+<section class="about-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="about-one__thumb wow fadeInRight" data-wow-delay="100ms">
+                    <!-- about thumb start -->
+                    <div class="about-one__thumb__one eduact-tilt" data-tilt-options="{ &quot;glare&quot;: false, &quot;maxGlare&quot;: 0, &quot;maxTilt&quot;: 2, &quot;speed&quot;: 700, &quot;scale&quot;: 1 }">
+                        <img src="1.jpg" alt="آتی نما">
+                    </div>
+                    <div class="about-one__thumb__shape1 wow zoomIn" data-wow-delay="300ms">
+                        <img src="about-shape-1-لگو.png" alt="آتی نما">
+                    </div>
+                    <div class="about-one__thumb__shape2 wow zoomIn" data-wow-delay="400ms">
+                        <img src="about-shape-1-2.png" alt="آتی نما">
+                    </div>
+                    <div class="about-one__thumb__box wow fadeInRight" data-wow-delay="600ms">
+                        <div class="about-one__thumb__box__icon"><span class="icon-Headphone-Women"></span></div>
+                        <h4 class="about-one__thumb__box__title">نیاز به دانستن جزئیات بیشتر دارید؟</h4>
+                        <p class="about-one__thumb__box__text"><a href="tel:09300565169">09300565169</a></p>
+                    </div>
+                </div><!-- about thumb end -->
+            </div>
+            <div class="col-xl-6">
+                <div class="about-one__content">
+                    <!-- about content start-->
+                    <div class="section-title">
+                        <h5 class="section-title__tagline">
+                            درباره ما
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 13" fill="none">
+                                <path d="M9.76794 0.395L0.391789 9.72833C-0.130596 10.2483 -0.130596 11.095 0.391789 11.615C0.914174 12.135 1.76472 12.135 2.28711 11.615L11.6633 2.28167C12.1856 1.76167 12.1856 0.915 11.6633 0.395C11.1342 -0.131667 10.2903 -0.131667 9.76794 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M23.1625 0.395L13.7863 9.72833C13.2639 10.2483 13.2639 11.095 13.7863 11.615C14.3087 12.135 15.1593 12.135 15.6816 11.615L25.0578 2.28167C25.5802 1.76167 25.5802 0.915 25.0578 0.395C24.5287 -0.131667 23.6849 -0.131667 23.1625 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M36.5569 0.395L27.1807 9.72833C26.6583 10.2483 26.6583 11.095 27.1807 11.615C27.7031 12.135 28.5537 12.135 29.076 11.615L38.4522 2.28167C38.9746 1.76167 38.9746 0.915 38.4522 0.395C37.9231 -0.131667 37.0793 -0.131667 36.5569 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M49.9514 0.395L40.5753 9.72833C40.0529 10.2483 40.0529 11.095 40.5753 11.615C41.0976 12.135 41.9482 12.135 42.4706 11.615L51.8467 2.28167C52.3691 1.76167 52.3691 0.915 51.8467 0.395C51.3176 -0.131667 50.4738 -0.131667 49.9514 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M63.3459 0.395L53.9698 9.72833C53.4474 10.2483 53.4474 11.095 53.9698 11.615C54.4922 12.135 55.3427 12.135 55.8651 11.615L65.2413 2.28167C65.7636 1.76167 65.7636 0.915 65.2413 0.395C64.7122 -0.131667 63.8683 -0.131667 63.3459 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M76.7405 0.395L67.3643 9.72833C66.8419 10.2483 66.8419 11.095 67.3643 11.615C67.8867 12.135 68.7373 12.135 69.2596 11.615L78.6358 2.28167C79.1582 1.76167 79.1582 0.915 78.6358 0.395C78.1067 -0.131667 77.2629 -0.131667 76.7405 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M90.1349 0.395L80.7587 9.72833C80.2363 10.2483 80.2363 11.095 80.7587 11.615C81.2811 12.135 82.1317 12.135 82.6541 11.615L92.0302 2.28167C92.5526 1.76167 92.5526 0.915 92.0302 0.395C91.5011 -0.131667 90.6573 -0.131667 90.1349 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M103.529 0.395L94.1533 9.72833C93.6309 10.2483 93.6309 11.095 94.1533 11.615C94.6756 12.135 95.5262 12.135 96.0486 11.615L105.425 2.28167C105.947 1.76167 105.947 0.915 105.425 0.395C104.896 -0.131667 104.052 -0.131667 103.529 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M116.924 0.395L107.548 9.72833C107.025 10.2483 107.025 11.095 107.548 11.615C108.07 12.135 108.921 12.135 109.443 11.615L118.819 2.28167C119.342 1.76167 119.342 0.915 118.819 0.395C118.29 -0.131667 117.446 -0.131667 116.924 0.395Z" fill="#F1F2FD"></path>
+                                <path d="M130.318 0.395L120.942 9.72833C120.42 10.2483 120.42 11.095 120.942 11.615C121.465 12.135 122.315 12.135 122.838 11.615L132.214 2.28167C132.736 1.76167 132.736 0.915 132.214 0.395C131.685 -0.131667 130.841 -0.131667 130.318 0.395Z" fill="#F1F2FD"></path>
+                            </svg>
+                        </h5>
+                        <h2 class="section-title__title">ایجاد بهترین جامعه برای موفقیت تحصیلی</h2>
+                    </div><!-- section-title -->
+                    <p class="about-one__content__text">
+                        هدف ما آماده‌سازی شما برای موفقیت در آزمون‌های تیزهوشان با آموزش‌های هدفمند است.
+                    </p>
+                    <div class="about-one__box">
+                        <div class="about-one__box__wrapper">
+                            <div class="about-one__box__icon"><span class="icon-Presentation"></span></div>
+                            <h4 class="about-one__box__title"> کلاس‌های آنلاین از هر کجای کشور</h4>
+                            <p class="about-one__box__text">در کلاس‌های آنلاین زنده، با مدرس در ارتباط باشید و نمونه سوالات تالیفی را برای موفقیت در تیزهوشان حل کنید</p>
+                        </div>
+                    </div><!-- /.icon-box -->
+                    <div class="about-one__box">
+                        <div class="about-one__box__wrapper">
+                            <div class="about-one__box__icon"><span class="icon-Online-learning"></span></div>
+                            <h4 class="about-one__box__title">کلاس‌های منعطف و هدفمند برای قبولی در تیزهوشان</h4>
+                            <p class="about-one__box__text"> کلاس‌های ما برای آمادگی در تیزهوشان با تدریس جامع و هدفمند، شما را برای دستیابی به نتایج عالی آماده می‌کند</p>
+                        </div>
+                    </div><!-- /.icon-box -->
+
+                </div><!-- about content end-->
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- Modal -->
+<section class="cta-three" data-jarallax="" data-speed="0.3" data-imgposition="50% -100%" style="z-index: 0;" data-jarallax-original-styles="z-index: 0;">
 
-<div class="modal fade" id="course1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 wow fadeInRight animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInRight;">
+                <div class="cta-three__thumb"><img src="cta-3-لگو.png"></div>
+                <h3 class="cta-three__title" style="color:#fff"><span>معرفی دوره ها</span> </h3>
+            </div>
+            <div class="col-xl-6 col-md-5 wow fadeInLeft animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInLeft;">
+                <div class="cta-three__btn">
+                    <div class="video-two__btn">
+                        <a href="معرفی دوره ها" class="video-popup">
+                            <span class="icon-play"></span>
+                        </a>
+                    </div>
+               </div>
+               
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;" id="jarallax-container-1">
+        
+    </div>
+<div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div class="cta-three__bg jarallax-img" style="background-image: url(&quot;/assets_2/images/p_4/videobackground.png&quot;); object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1905px; height: 781.4px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 85.8px; transform: translate3d(0px, 635.278px, 0px);" data-jarallax-original-styles="background-image: url(/assets_2/images/p_4/videobackground.png); object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1903px; height: 493.3px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 11.85px; transform: translate3d(0px, 58.29px, 0px);"></div></div></section>
+ 
 
-<div class="modal-dialog modal-lg modal-dialog-centered">
 
-<div class="modal-content">
 
-<div class="modal-header">
 
-<h3>دوره جامع تیزهوشان ششم</h3>
 
-<button class="btn-close btn-close-white"
 
-data-bs-dismiss="modal"></button>
 
-</div>
 
-<div class="modal-body">
 
-<!-- همان لینک عکس بالا -->
 
-<img src="YOUR_COURSE_IMAGE_LINK">
 
-<h4 style="color:#ff9800">قیمت: 21/500/000 تومان</h4>
 
-<ul>
 
-<li>تعداد جلسات: 16 جلسه</li>
 
-<li>مدت هر جلسه: 90 دقیقه</li>
 
-<li>پشتیبانی کامل</li>
 
-<li>آزمون‌های استاندارد</li>
 
-<li>جزوه اختصاصی</li>
 
-</ul>
 
-<div class="call-buttons">
 
-<a href="tel:09300565169">
 
-تماس با 09300565169
 
-</a>
-
-<a href="tel:09941196331">
-
-تماس با 09941196331
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 <style>
-
-/*==========================
-STUDENTS + BANNER
-==========================*/
-
-.students{
-
-padding:130px 0;
-
-}
-
-.students-title{
-
-text-align:center;
-
-margin-bottom:70px;
-
-}
-
-.students-title span{
-
-display:inline-block;
-
-padding:10px 24px;
-
-background:rgba(255,152,0,.12);
-
-color:#ff9800;
-
-border-radius:50px;
-
-font-weight:700;
-
-margin-bottom:18px;
-
-}
-
-.students-title h2{
-
-font-size:55px;
-
-font-weight:900;
-
-margin-bottom:18px;
-
-}
-
-.students-title p{
-
-max-width:700px;
-
-margin:auto;
-
-line-height:36px;
-
-color:#d5d5d5;
-
-}
-
-.student-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-margin-bottom:90px;
-
-}
-
-.student-card{
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(18px);
-
-border:1px solid rgba(255,255,255,.08);
-
-border-radius:28px;
-
-padding:35px;
-
-transition:.35s;
-
-}
-
-.student-card:hover{
-
-transform:translateY(-10px);
-
-border-color:#ff9800;
-
-}
-
-.stars{
-
-font-size:18px;
-
-color:#ff9800;
-
-margin-bottom:18px;
-
-}
-
-.student-card p{
-
-line-height:34px;
-
-color:#d5d5d5;
-
-margin-bottom:25px;
-
-}
-
-.student-info{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-}
-
-.student-info img{
-
-width:65px;
-
-height:65px;
-
-border-radius:50%;
-
-}
-
-.student-info h5{
-
-margin:0;
-
-font-size:18px;
-
-font-weight:900;
-
-}
-
-.student-info span{
-
-font-size:14px;
-
-color:#bfbfbf;
-
-}
-
-/*==========================
-BIG BANNER
-==========================*/
-
-.big-banner{
-
-position:relative;
-
-height:380px;
-
-overflow:hidden;
-
-border-radius:35px;
-
-border:2px solid rgba(255,255,255,.08);
-
-box-shadow:0 30px 70px rgba(0,0,0,.30);
-
-}
-
-.big-banner img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
-transition:.6s;
-
-}
-
-.big-banner:hover img{
-
-transform:scale(1.05);
-
-}
-
-.big-banner::before{
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-background:linear-gradient(0deg,rgba(7,23,47,.75),rgba(7,23,47,.15));
-
-}
-
-.banner-content{
-
-position:absolute;
-
-inset:0;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:30px;
-
-z-index:5;
-
-}
-
-.banner-content h2{
-
-font-size:48px;
-
-font-weight:900;
-
-margin-bottom:15px;
-
-}
-
-.banner-content p{
-
-font-size:18px;
-
-line-height:36px;
-
-max-width:750px;
-
-margin-bottom:30px;
-
-}
-
-.banner-content a{
-
-padding:18px 40px;
-
-border-radius:50px;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-color:#fff;
-
-font-weight:800;
-
-}
-
-@media(max-width:992px){
-
-.student-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.big-banner{
-
-height:250px;
-
-}
-
-.banner-content h2{
-
-font-size:30px;
-
-}
-
-.banner-content p{
-
-font-size:15px;
-
-line-height:30px;
-
-}
-
-}
-
+    .div-img-small {
+        margin-left: 20px;
+    }
+
+    .course-three__content-a{
+       margin-top:25px;
+        display: flex;
+        justify-content: end;
+    }
+</style>
+        <section id="course_j" class="course-three" style=" background-color: #121745;">
+            <div class="container">
+                <div class="section-title wow fadeInUp text-center" data-wow-delay="100ms">
+                    <h5 class="section-title__tagline">
+
+                        <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 13">
+                            <g clip-path="url(#clip0_324_36194)">
+                                <path d="M10.5406 6.49995L0.700562 12.1799V8.56995L4.29056 6.49995L0.700562 4.42995V0.819946L10.5406 6.49995Z"></path>
+                                <path d="M25.1706 6.49995L15.3306 12.1799V8.56995L18.9206 6.49995L15.3306 4.42995V0.819946L25.1706 6.49995Z"></path>
+                                <path d="M39.7906 6.49995L29.9506 12.1799V8.56995L33.5406 6.49995L29.9506 4.42995V0.819946L39.7906 6.49995Z"></path>
+                                <path d="M54.4206 6.49995L44.5806 12.1799V8.56995L48.1706 6.49995L44.5806 4.42995V0.819946L54.4206 6.49995Z"></path>
+                            </g>
+                        </svg>
+                    </h5>
+                    <h2 class="section-title__title">دوره های پاییز 1405</h2>
+                </div><!-- section-title -->
+                <div class="row">
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="هوش و استعداد تحلیلی (ترم پاییز) 1406-1405" href="لینک دوره ">
+                                            <img alt="هوش و استعداد تحلیلی (ترم پاییز) 1406-1405" title="هوش و استعداد تحلیلی (ترم پاییز) 1406-1405" src="ترم پاییز هوش.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="هوش و استعداد تحلیلی (ترم پاییز) 1406-1405" href="لینک دوره ">
+                                            هوش و استعداد تحلیلی (ترم پاییز) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        4,800,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره "><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="علوم هفتم (ترم 2)" href="لینک دوره">
+                                            <img alt="علوم هفتم (ترم 2)" title="علوم هفتم (ترم 2)" src="علوم 7 پاییز.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="علوم هفتم ترم 2" href="لینک دوره">
+                                            علوم هفتم (ترم 2)
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        3,000,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="ریاضی هفتم (ترم 2)" href="لینک دوره">
+                                            <img alt="ریاضی هفتم (ترم 2)" title="ریاضی هفتم (ترم 2)" src="ریاضی 7 پاییز.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="ریاضی هفتم (ترم 2)" href="لینک دوره">
+                                            ریاضی هفتم (ترم 2)
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            3,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            3,000,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="ریاضی ششم (ترم 2)" href="لینک دوره">
+                                            <img alt="ریاضی ششم (ترم 2)" title="ریاضی ششم (ترم 2)" src="ششم ریاضی پاییز.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="ریاضی ششم (ترم 2)" href="لینک دوره">
+                                            ریاضی ششم (ترم 2)
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            3,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            3,000,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="آزمون رایگان هوش و استعداد تحلیلی برای تمامی مقاطع به مناسبت به روز رسانی سایت آتی نما" href="https://survey.porsline.ir/s/riMsrU90">
+                                            <img alt="آزمون رایگان" title="آزمون رایگان" src="https://cdn.imgurl.ir/uploads/h135400_images.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="آزمون رایگان" href="https://survey.porsline.ir/s/riMsrU90">
+                                           آزمون رایگان هوش و استعداد تحلیلی برای تمامی مقاطع به مناسبت به روز رسانی سایت آتی نما
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                           500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            رایگان!
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="https://survey.porsline.ir/s/riMsrU90"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                            <a title="علوم ششم (ترم 2)" href="لینک دوره">
+                                                <img title="علوم ششم (ترم 2)" alt="علوم ششم (ترم 2)" src="علوم ششم پاییز.jpg">
+                                            </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="علوم ششم (ترم 2)" href="لینک دوره">
+                                            علوم ششم (ترم 2)
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            3,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            3,000,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="course_j" class="course-three" style=" background-color: #121745;">
+            <div class="container">
+                <div class="section-title wow fadeInUp text-center" data-wow-delay="100ms">
+                    <h5 class="section-title__tagline">
+
+                        <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 13">
+                            <g clip-path="url(#clip0_324_36194)">
+                                <path d="M10.5406 6.49995L0.700562 12.1799V8.56995L4.29056 6.49995L0.700562 4.42995V0.819946L10.5406 6.49995Z"></path>
+                                <path d="M25.1706 6.49995L15.3306 12.1799V8.56995L18.9206 6.49995L15.3306 4.42995V0.819946L25.1706 6.49995Z"></path>
+                                <path d="M39.7906 6.49995L29.9506 12.1799V8.56995L33.5406 6.49995L29.9506 4.42995V0.819946L39.7906 6.49995Z"></path>
+                                <path d="M54.4206 6.49995L44.5806 12.1799V8.56995L48.1706 6.49995L44.5806 4.42995V0.819946L54.4206 6.49995Z"></path>
+                            </g>
+                        </svg>
+                    </h5>
+                    <h2 class="section-title__title">دوره های هوش و استعداد تحلیلی</h2>
+                </div><!-- section-title -->
+                <div class="row">
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="هوش و استعداد تحلیلی (ترم تابستان) 1406-1405" href="لینک دوره">
+                                            <img alt="هوش و استعداد تحلیلی (ترم تابستان) 1406-1405" title="هوش و استعداد تحلیلی (ترم تابستان) 1406-1405" src="ترم تابستان هوش.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="هوش و استعداد تحلیلی (ترم تابستان) 1406-1405" href="لینک دوره">
+                                            هوش و استعداد تحلیلی (ترم تابستان) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        4,800,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="هوش و استعداد تحلیلی (ترم پاییز) 1406-1405" href="لینک دوره ">
+                                            <img alt="هوش و استعداد تحلیلی (ترم پاییز) 1406-1405" title="هوش و استعداد تحلیلی (ترم پاییز) 1406-1405" src="ترم پاییز هوش.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="هوش و استعداد تحلیلی (ترم پاییز) 1406-1405" href="لینک دوره ">
+                                            هوش و استعداد تحلیلی (ترم پاییز) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        4,800,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره "><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="هوش و استعداد تحلیلی (ترم زمستان) 1406-1405" href="لینک دوره">
+                                            <img alt="هوش و استعداد تحلیلی (ترم زمستان) 1406-1405" title="هوش و استعداد تحلیلی (ترم زمستان) 1406-1405" src="ترم زمستان هوش.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="هوش و استعداد تحلیلی (ترم زمستان) 1406-1405" href="لینک دوره">
+                                            هوش و استعداد تحلیلی (ترم زمستان) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        4,800,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="اردو نوروزی 1406-1405" href="لینک دوره">
+                                            <img alt="اردو نوروزی 1406-1405" title="اردو نوروزی 1406-1405" src="ترم جمع بندی هوش.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="اردو نوروزی 1406-1405" href="لینک دوره">
+                                            جمع بندی (1) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        4,800,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="جمع بندی 1406-1405" href="لینک دوره">
+                                            <img alt="جمع بندی 1406-1405" title="جمع بندی 1406-1405" src="جمع بندی نهایی هوش و استعداد.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="جمع بندی 1406-1405" href="لینک دوره">
+                                            جمع بندی (2) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        4,800,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="course_j" class="course-three" style=" background-color: #121745;">
+            <div class="container">
+                <div class="section-title wow fadeInUp text-center" data-wow-delay="100ms">
+                    <h5 class="section-title__tagline">
+
+                        <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 13">
+                            <g clip-path="url(#clip0_324_36194)">
+                                <path d="M10.5406 6.49995L0.700562 12.1799V8.56995L4.29056 6.49995L0.700562 4.42995V0.819946L10.5406 6.49995Z"></path>
+                                <path d="M25.1706 6.49995L15.3306 12.1799V8.56995L18.9206 6.49995L15.3306 4.42995V0.819946L25.1706 6.49995Z"></path>
+                                <path d="M39.7906 6.49995L29.9506 12.1799V8.56995L33.5406 6.49995L29.9506 4.42995V0.819946L39.7906 6.49995Z"></path>
+                                <path d="M54.4206 6.49995L44.5806 12.1799V8.56995L48.1706 6.49995L44.5806 4.42995V0.819946L54.4206 6.49995Z"></path>
+                            </g>
+                        </svg>
+                    </h5>
+                    <h2 class="section-title__title">پکیج های ویژه آتی نما</h2>
+                </div><!-- section-title -->
+                <div class="row">
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                            <a title="پکیج هوش و استعداد تحلیلی تیزهوشان 1406-1405" href="لینک دوره">
+                                                <img title="پکیج هوش و استعداد تحلیلی تیزهوشان 1406-1405" alt="پکیج هوش و استعداد تحلیلی تیزهوشان 1406-1405" src="emptycourse.jpg">
+                                            </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="پکیج هوش و استعداد تحلیلی تیزهوشان 1406-1405" href="لینک دوره">
+                                            پکیج هوش و استعداد تحلیلی تیزهوشان 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div class="div-img-small">
+                                                    <a href="https://tizhossein2025abedi-dot.github.io/">
+                                                        <img style="width:65px;height:65px" src="1.jpg" alt="" title="">
+                                                    </a>
+                                                </div>
+                                            <h5 class="course-three__author__name"></h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            24,000,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            21,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                            <a title="پکیج هوش و استعداد تحلیلی حضوری 1406-1405" href="لینک دوره">
+                                                <img title="پکیج هوش و استعداد تحلیلی حضوری 1406-1405" alt="پکیج هوش و استعداد تحلیلی حضوری 1406-1405" src="emptycourse.jpg">
+                                            </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="پکیج هوش و استعداد تحلیلی حضوری 1406-1405" href="لینک دوره">
+                                            پکیج هوش و استعداد تحلیلی حضوری 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div class="div-img-small">
+                                                    <a href="https://tizhossein2025abedi-dot.github.io/">
+                                                        <img style="width:65px;height:65px" src="1.jpg" alt="" title="">
+                                                    </a>
+                                                </div>
+                                            <h5 class="course-three__author__name"></h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            37,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            33,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                            <a title="پکیج علوم هفتم 1406-1405" href="لینک دوره">
+                                                <img title="پکیج علوم هفتم 1406-1405" alt="پکیج علوم هفتم 1406-1405" src="emptycourse.jpg">
+                                            </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="پکیج علوم هفتم 1406-1405" href="لینک دوره">
+                                            پکیج علوم هفتم 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div class="div-img-small">
+                                                    <a href="https://tizhossein2025abedi-dot.github.io/">
+                                                        <img style="width:65px;height:65px" src="1.jpg" alt="" title="">
+                                                    </a>
+                                                </div>
+                                            <h5 class="course-three__author__name"></h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            10,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            8,100,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                            <a title="پکیج علوم ششم 1406-1405" href="لینک دوره">
+                                                <img title="پکیج علوم ششم 1406-1405" alt="پکیج علوم ششم 1406-1405" src="emptycourse.jpg">
+                                            </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="پکیج علوم ششم 1406-1405" href="لینک دوره">
+                                            پکیج علوم ششم 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div class="div-img-small">
+                                                    <a href="https://tizhossein2025abedi-dot.github.io/">
+                                                        <img style="width:65px;height:65px" src="1.jpg" alt="" title="">
+                                                    </a>
+                                                </div>
+                                            <h5 class="course-three__author__name"></h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            10,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            8,100,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                            <a title="پکیج ریاضی ششم 1406-1405" href="لینک دوره">
+                                                <img title="پکیج ریاضی ششم 1406-1405" alt="پکیج ریاضی ششم 1406-1405" src="emptycourse.jpg">
+                                            </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="پکیج ریاضی ششم 1406-1405" href="لینک دوره">
+                                            پکیج ریاضی ششم 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div class="div-img-small">
+                                                    <a href="https://tizhossein2025abedi-dot.github.io/">
+                                                        <img style="width:65px;height:65px" src="1.jpg" alt="" title="">
+                                                    </a>
+                                                </div>
+                                            <h5 class="course-three__author__name"></h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            10,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            8,100,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                            <a title="پکیج ریاضی هفتم 1406-1405" href="لینک دوره">
+                                                <img title="پکیج ریاضی هفتم 1406-1405" alt="پکیج ریاضی هفتم 1406-1405" src="emptycourse.jpg">
+                                            </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="پکیج ریاضی هفتم 1406-1405" href="لینک دوره">
+                                            پکیج ریاضی هفتم 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div class="div-img-small">
+                                                    <a href="https://tizhossein2025abedi-dot.github.io/">
+                                                        <img style="width:65px;height:65px" src="1.jpg" alt="" title="">
+                                                    </a>
+                                                </div>
+                                            <h5 class="course-three__author__name"></h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center price" style="position:relative">
+                                                    <div class="discount-price">
+                                                        <span>
+                                                            10,500,000  تومان
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            8,100,000  تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="course_j" class="course-three" style=" background-color: #121745;">
+            <div class="container">
+                <div class="section-title wow fadeInUp text-center" data-wow-delay="100ms">
+                    <h5 class="section-title__tagline">
+
+                        <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 13">
+                            <g clip-path="url(#clip0_324_36194)">
+                                <path d="M10.5406 6.49995L0.700562 12.1799V8.56995L4.29056 6.49995L0.700562 4.42995V0.819946L10.5406 6.49995Z"></path>
+                                <path d="M25.1706 6.49995L15.3306 12.1799V8.56995L18.9206 6.49995L15.3306 4.42995V0.819946L25.1706 6.49995Z"></path>
+                                <path d="M39.7906 6.49995L29.9506 12.1799V8.56995L33.5406 6.49995L29.9506 4.42995V0.819946L39.7906 6.49995Z"></path>
+                                <path d="M54.4206 6.49995L44.5806 12.1799V8.56995L48.1706 6.49995L44.5806 4.42995V0.819946L54.4206 6.49995Z"></path>
+                            </g>
+                        </svg>
+                    </h5>
+                    <h2 class="section-title__title">دوره های حضوری پاییز 1405</h2>
+                </div><!-- section-title -->
+                <div class="row">
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="هوش و استعداد تحلیلی حضوری (ترم پاییز) 1406-1405" href="لینک دوره">
+                                            <img alt="هوش و استعداد تحلیلی حضوری (ترم پاییز) 1406-1405" title="هوش و استعداد تحلیلی حضوری (ترم پاییز) 1406-1405" src="ترم پاییز هوش.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="هوش و استعداد تحلیلی حضوری (ترم پاییز) 1406-1405" href="لینک دوره">
+                                            هوش و استعداد تحلیلی حضوری (ترم پاییز) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        7,500,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="علوم هفتم حضوری (ترم پاییز) 1406-1405" href="لینک دوره">
+                                            <img alt="هوش و استعداد تحلیلی حضوری (ترم پاییز) 1406-1405" title="علوم هفتم حضوری (ترم پاییز) 1406-1405" src="علوم 7 پاییز.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="علوم هفتم حضوری (ترم پاییز) 1406-1405" href="لینک دوره">
+                                            علوم هفتم حضوری (ترم پاییز) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        5,500,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="ریاضی هفتم حضوری (ترم زمستان) 1406-1405" href="لینک دوره">
+                                            <img alt="ریاضی هفتم حضوری (ترم زمستان) 1406-1405" title="ریاضی هفتم حضوری (ترم زمستان) 1406-1405" src="ریاضی 7 پاییز.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="ریاضی هفتم حضوری (ترم زمستان) 1406-1405" href="لینک دوره">
+                                            ریاضی هفتم حضوری (ترم پاییز) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        5,500,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="اردو نوروزی حضوری 06-05" href="لینک دوره">
+                                            <img alt="اردو نوروزی حضوری 06-05" title="اردو نوروزی حضوری 06-05" src="ششم ریاضی پاییز.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="اردو نوروزی حضوری 06-05" href="لینک دوره">
+                                            ریاضی ششم حضوری (ترم پاییز) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                       5,500,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div style="align-content:center;display:block" class="course-three__item">
+                                <div>
+                                <div class="course-three__thumb">
+                                        <a title="علوم ششم حضوری (ترم پاییز) 1406-1405" href="لینک دوره">
+                                            <img alt="لوم ششم حضوری (ترم پاییز) 1406-1405" title="لوم ششم حضوری (ترم پاییز) 1406-1405" src="علوم ششم پاییز.jpg">
+                                        </a>
+
+                                </div> 
+                                <div class="course-three__content">
+                                    <div class="course-three__ratings">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <h3 class="course-three__title">
+                                        <a title="لوم ششم حضوری (ترم پاییز) 1406-1405" href="لینک دوره">
+                                            علوم ششم حضوری (ترم پاییز) 1406-1405
+                                        </a>
+                                    </h3>
+
+                                    <div class="course-three__bottom">
+                                        <div class="course-three__author">
+                                                <div>
+                                                        <div class="div-img-small">
+                                                                <a href="درباره استاد.jpg"> <img title="حسین عابدی" alt="حسین عابدی" src="عابدی.jpg"></a>
+                                                        </div>
+                                                </div>
+                                            <h5 class="course-three__author__name">حسین عابدی</h5>
+                                        </div>
+                                        <div class="course-three__meta">
+                                                <div class="course-three__meta__price center">
+                                                    <span>
+                                                        5,500,000 تومان
+                                                    </span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="course-three__content course-three__content-a">
+                                    <a class="blog-two__rm" href="لینک دوره"><span class="icon-arrow"></span></a>
+                                </div>
+
+                            </div>
+                         
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="blog-one">
+    <div class="container">
+        <div class="section-title text-center">
+            <h5 class="section-title__tagline">
+                آخرین وبلاگ
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 13" fill="none">
+                    <path d="M9.76794 0.395L0.391789 9.72833C-0.130596 10.2483 -0.130596 11.095 0.391789 11.615C0.914174 12.135 1.76472 12.135 2.28711 11.615L11.6633 2.28167C12.1856 1.76167 12.1856 0.915 11.6633 0.395C11.1342 -0.131667 10.2903 -0.131667 9.76794 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M23.1625 0.395L13.7863 9.72833C13.2639 10.2483 13.2639 11.095 13.7863 11.615C14.3087 12.135 15.1593 12.135 15.6816 11.615L25.0578 2.28167C25.5802 1.76167 25.5802 0.915 25.0578 0.395C24.5287 -0.131667 23.6849 -0.131667 23.1625 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M36.5569 0.395L27.1807 9.72833C26.6583 10.2483 26.6583 11.095 27.1807 11.615C27.7031 12.135 28.5537 12.135 29.076 11.615L38.4522 2.28167C38.9746 1.76167 38.9746 0.915 38.4522 0.395C37.9231 -0.131667 37.0793 -0.131667 36.5569 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M49.9514 0.395L40.5753 9.72833C40.0529 10.2483 40.0529 11.095 40.5753 11.615C41.0976 12.135 41.9482 12.135 42.4706 11.615L51.8467 2.28167C52.3691 1.76167 52.3691 0.915 51.8467 0.395C51.3176 -0.131667 50.4738 -0.131667 49.9514 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M63.3459 0.395L53.9698 9.72833C53.4474 10.2483 53.4474 11.095 53.9698 11.615C54.4922 12.135 55.3427 12.135 55.8651 11.615L65.2413 2.28167C65.7636 1.76167 65.7636 0.915 65.2413 0.395C64.7122 -0.131667 63.8683 -0.131667 63.3459 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M76.7405 0.395L67.3643 9.72833C66.8419 10.2483 66.8419 11.095 67.3643 11.615C67.8867 12.135 68.7373 12.135 69.2596 11.615L78.6358 2.28167C79.1582 1.76167 79.1582 0.915 78.6358 0.395C78.1067 -0.131667 77.2629 -0.131667 76.7405 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M90.1349 0.395L80.7587 9.72833C80.2363 10.2483 80.2363 11.095 80.7587 11.615C81.2811 12.135 82.1317 12.135 82.6541 11.615L92.0302 2.28167C92.5526 1.76167 92.5526 0.915 92.0302 0.395C91.5011 -0.131667 90.6573 -0.131667 90.1349 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M103.529 0.395L94.1533 9.72833C93.6309 10.2483 93.6309 11.095 94.1533 11.615C94.6756 12.135 95.5262 12.135 96.0486 11.615L105.425 2.28167C105.947 1.76167 105.947 0.915 105.425 0.395C104.896 -0.131667 104.052 -0.131667 103.529 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M116.924 0.395L107.548 9.72833C107.025 10.2483 107.025 11.095 107.548 11.615C108.07 12.135 108.921 12.135 109.443 11.615L118.819 2.28167C119.342 1.76167 119.342 0.915 118.819 0.395C118.29 -0.131667 117.446 -0.131667 116.924 0.395Z" fill="#F1F2FD"></path>
+                    <path d="M130.318 0.395L120.942 9.72833C120.42 10.2483 120.42 11.095 120.942 11.615C121.465 12.135 122.315 12.135 122.838 11.615L132.214 2.28167C132.736 1.76167 132.736 0.915 132.214 0.395C131.685 -0.131667 130.841 -0.131667 130.318 0.395Z" fill="#F1F2FD"></path>
+                </svg>
+            </h5>
+            <h2 class="section-title__title">آخرین به روز رسانی ها و مقالات</h2>
+        </div><!-- section-title -->
+        <div class="row">
+            <div class="col-xl-8 wow fadeInUp" data-wow-delay="200ms">
+
+    <div class="blog-one__item">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="blog-one__image">
+                        <img src="f234897b422447a9bd56474884e5e018.png">
+                    <a target="_blank" title="آغاز ثبت‌نام دوره‌های آموزشی ویژه دانش‌آموزان در آتی نما" href="https://tizhossein2025abedi-dot.github.io/contents/SingleBlog?Id=4">
+
+                    </a>
+                </div><!-- /.blog-image -->
+            </div>
+            <div class="col-md-7 d-flex align-items-center">
+                <div class="blog-one__content">
+                        <div class="blog-one__cats"><a href="https://tizhossein2025abedi-dot.github.io/Contents/Blogs?BlogGroupId=1&amp;Page=1"> آموزشی</a></div>
+                    <h3 class="blog-one__title">
+                        <a target="_blank" title="آغاز ثبت‌نام دوره‌های آموزشی ویژه دانش‌آموزان در آتی نما" href="https://tizhossein2025abedi-dot.github.io/contents/SingleBlog?Id=4">     آغاز ثبت‌نام دوره‌های آموزشی ویژه دانش‌آموزان در آتی نما</a>
+                    </h3><!-- /.blog-title -->
+                        <div class="blog-one__meta">
+                            <div class="blog-one__meta__date">1404/03/27</div><!-- /.blog-date -->
+                        </div>
+                </div><!-- /.blog-content -->
+            </div>
+        </div>
+    </div>
+        <div class="blog-one__item">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="blog-one__image">
+                        <img src="هوش مصنوعی.png">
+                        <a href="https://tizhossein2025abedi-dot.github.io/blog-details-right.html"></a>
+                    </div><!-- /.blog-image -->
+                </div>
+                <div class="col-md-7 d-flex align-items-center">
+                    <div class="blog-one__content">
+                        <div class="blog-one__cats"><a href="https://tizhossein2025abedi-dot.github.io/Contents/Blogs?BlogGroupId=1&amp;Page=1"> آموزشی</a></div>
+                        <h3 class="blog-one__title">
+                            <a target="_blank" title="هوش مصنوعی چگونه یادگیری دانش‌آموزان را متحول می‌کند؟" href="https://tizhossein2025abedi-dot.github.io/contents/SingleBlog?Id=3">هوش مصنوعی چگونه یادگیری دانش‌آموزان را متحول می‌کند؟</a>
+                        </h3><!-- /.blog-title -->
+                        <div class="blog-one__meta">
+                      
+                            <div class="blog-one__meta__date">1404/03/22</div><!-- /.blog-date -->
+ 
+                        </div><!-- /.blog-meta -->
+                    </div><!-- /.blog-content -->
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="col-xl-4 wow fadeInLeft" data-wow-delay="200ms">
+
+<style type="text/css">
+    .blog-one__cta__email-input-box .inp-em {
+        background-color: var(--eduact-black5);
+    }
+
+    .blog-one__cta__email-input-box .inp-em {
+        width: 100%;
+        height: 56px;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+        background-color: var(--eduact-white);
+        font-size: 16px;
+        font-family: var(--eduact-font);
+        color: var(--eduact-text);
+        padding: 0 24px;
+        font-weight: 500;
+    }
 </style>
 
-<section class="students">
+<div class="blog-one__cta" style="background-image: url(/assets_2/images/p_4/backgrounds/mail-bg-لگو.png);">
+    <div class="blog-one__cta__icon"><span class="icon-Newsletter"></span></div>
+    <h3 class="blog-one__cta__title">برای به روز رسانی روزانه در خبرنامه ما مشترک شوید</h3>
+    <form id="contactFrm" class="blog-one__cta__email-box mc-form" novalidate="novalidate">
+        <div class="blog-one__cta__email-input-box">
+            <input style="display:none" name="Description" type="text" value="خبرنامه از صفحه اول" data-val="true" data-val-length="فیلد پیام بایستی کمتر از 300 کاراکتر باشد." data-val-length-max="300" data-val-required="فیلد توضیحات نبایستی خالی باشد" id="Description" maxlength="300">
+            <input style="display:none" name="FullName" value="--خبرنامه" type="text" data-val="true" data-val-length="فیلد نام خانوادگی بایستی کمتر از 100 کاراکتر باشد." data-val-length-max="300" data-val-required="فیلد نام نام خانوادگی نبایستی خالی باشد" id="FullName" maxlength="300">
+            <input name="MobNo" type="text" class="inp-em" placeholder="شماره موبایل خود را وارد کنید" data-val="true" data-val-length="فیلد موبایل بایستی کمتر از 11 کاراکتر باشد." data-val-length-max="11" data-val-regex="شماره موبایل معتبر نمی‌باشد" data-val-regex-pattern="^09\d{9}$" data-val-required="فیلد شماره موبایل نبایستی خالی باشد" id="MobNo" maxlength="11" value="">
+            <span style="color:red;font-size:13px;margin-right:7px" class="validation help-block with-errors field-validation-valid" data-valmsg-for="MobNo" data-valmsg-replace="true"></span>
 
-<div class="container">
-
-<div class="students-title" data-aos="fade-up">
-
-<span>
-
-نظرات کاربران
-
-</span>
-
-<h2>
-
-اعتماد شما، افتخار ما
-
-</h2>
-
-<p>
-
-نظر تعدادی از دانش‌آموزان آکادمی آتی نما
-
-</p>
-
+           
+        </div>
+        <button type="submit" class="eduact-btn" style="display:flex; justify-content:center; align-items:center;"><span class="eduact-btn__curve"></span>اشتراک</button>
+    </form>
+    <div class="mc-form__response"></div>
+    <p class="blog-one__cta__text">دریافت آخرین اخبار</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 341" fill="none">
+        <path d="M-3 0.729858C66.0958 55.5037 149.949 88.4404 237.852 95.334L374.567 106.055C418.278 109.483 452 145.953 452 189.798V351.73H-3V0.729858Z" fill="url(#paint0_linear_214_20)"></path>
+        <defs>
+            <lineargradient id="paint0_linear_214_20" x1="99.2396" y1="17.183" x2="271.488" y2="365.14" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#FF7200" stop-opacity="0.71"></stop>
+                <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+            </lineargradient>
+        </defs>
+    </svg>
 </div>
-
-<div class="student-grid">
-
-<div class="student-card">
-
-<div class="stars">★★★★★</div>
-
-<p>
-از شرکت در این دوره‌ها کاملاً راضی هستم و تجربه بسیار خوبی از آموزش در آتی نما داشتم.
-
-</p>
-
-<div class="student-info">
-
-<img src="https://uploadkon.ir/uploads/71cb02_26-2147483648-216594.jpg">
-
-<div>
-
-<h5>فاطمه عابدی</h5>
-
-<span>دانش آموز آکادمی آتی نما</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="student-card">
-
-<div class="stars">★★★★★</div>
-
-<p>
-
-کیفیت تدریس و برنامه‌ریزی فوق‌العاده بود و همه مطالب به‌صورت مفهومی آموزش داده شد.
-
-</p>
-
-<div class="student-info">
-
-<img src="https://uploadkon.ir/uploads/20c131_26%D9%84%DA%AF%D9%88-%D8%A2%D8%AA%DB%8C-%D9%86%D9%85%D8%A7-.jpeg">
-
-<div>
-
-<h5>دانش‌آموز</h5>
-
-<span>آکادمی آتی نما</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="student-card">
-
-<div class="stars">★★★★★</div>
-
-<p>
-همه دوره ها عالی بودن 
-
-</p>
-
-<div class="student-info">
-
-<img src="https://uploadkon.ir/uploads/20c131_26%D9%84%DA%AF%D9%88-%D8%A2%D8%AA%DB%8C-%D9%86%D9%85%D8%A7-.jpeg">
-
-<div>
-
-<h5>دانش‌آموز</h5>
-
-<span>آکادمی آتی نما</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="big-banner" data-aos="zoom-in">
-
-<img src="https://uploadkon.ir/uploads/8c1701_26گروه-آموزشی-آتی-نما.jpg" alt="آتی نما">
-
-<div class="banner-content">
-
-<h2>
-
-به خانواده آتی نما بپیوندید
-
-</h2>
-
-<p>
-
-آموزش تخصصی آزمون تیزهوشان، برنامه‌ریزی حرفه‌ای، آزمون‌های استاندارد و پشتیبانی مستمر برای موفقیت دانش‌آموزان.
-
-</p>
-
-<a href="#courses">
-
-مشاهده دوره‌ها
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
+            </div>
+        </div>
+    </div>
 </section>
+
+
+<footer class="main-footer">
+    <div class="main-footer__bg" style="background-image: url(/assets_2/images/p_4/shapes/footer-bg-لگو.png);"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-md-5 wow fadeInUp" data-wow-delay="100ms">
+                <div class="main-footer__about">
+                    <a href="https://tizhossein2025abedi-dot.github.io/" class="main-footer__logo">
+                        <img src="1.jpg" width="75px" height="75px">
+                    </a><!-- /.footer-logo -->
+                    <p class="main-footer__about__text">هدف این سایت فراهم کردن آموزش های هدفمندبرای  آمادگی  در آزمون های تیزهوشان و ارتقای  مهارت های تحصیلی  دانش آموزان است</p>
+                    <div class="main-footer__social">
+                      
+                        <a href="https://rubika.ir/atinma1406"><i class="fab fa-rubika"></i></a>
+                        <a href="https://rubika.ir/atinma1406"><i class="fab fa-rubika"></i></a>
+                    </div><!-- /.footer-social -->
+                </div><!-- footer-top -->
+            </div>
+            <div class="col-xl-3 col-md-4 wow fadeInUp" data-wow-delay="200ms">
+                <div class="main-footer__navmenu main-footer__widget01">
+                    <h3 class="main-footer__title  footer-color">لینک های سریع</h3>
+                    <ul>
+                        <li><a href="درباره ما.jpg"> درباره ما</a></li>
+                        <li><a href="https://cdn.imgurl.ir/uploads/u5198__.pdf">دوره های آموزشی</a></li>
+                        <li><a href="https://tizhossein2025abedi-dot.github.io/Contents/Blogs?Page=1"> اخبار و مقالات </a></li>
+                        <li><a href="https://tizhossein2025abedi-dot.github.io/Contents/Rules">قوانین و مقررات </a></li>
+                    </ul><!-- /.list-unstyled -->
+                </div><!-- /.footer-menu -->
+            </div>
+            <div class="col-xl-2 col-md-3 wow fadeInUp" data-wow-delay="300ms">
+                <div class="main-footer__navmenu main-footer__widget02">
+
+					<ul>
+						
+                        <li>
+                            <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=617399&amp;Code=Cq1UBxXlAgWQIkzESVcAwJna2m9eFFPv">
+                                <img referrerpolicy="origin" src="logo.aspx" alt="" style="cursor:pointer" code="Cq1UBxXlAgWQIkzESVcAwJna2m9eFFPv"></a>
+                            </li>
+                        <li>
+                            <span>
+                                <script src="trust-v3.js" theme="light" size="md"></script>
+                            </span>
+                        </li>
+                        <li><a href="https://tizhossein2025abedi-dot.github.io/course.html"> </a></li>
+                    
+                    </ul><!-- /.list-unstyled -->
+                </div><!-- /.footer-menu -->
+            </div>
+            <div class="col-xl-4 col-md-12 wow fadeInUp" data-wow-delay="400ms">
+ <style type="text/css">
+    .main-footer__email-input-box input[type="text"] {
+        width: 100%;
+        height: 55px;
+        border: 1px solid rgba(var(--eduact-base-rgb), 0.56);
+        border-radius: 6px;
+        outline: none;
+        background-color: transparent;
+        font-size: 18px;
+        font-family: var(--eduact-font);
+        color: var(--eduact-text2);
+        padding: 0 19px 0 130px;
+        font-weight: 400;
+    }
+ </style>
+ 
+
+
+<div class="main-footer__newsletter">
+    <h3 class="main-footer__title">با ما تماس بگیرید</h3>
+    <ul class="main-footer__info-list">
+        <li><span class="icon-Location"></span> آذربایجان شرقی، شهرستان ملکان</li>
+       
+        
+        <li><span class="icon-Telephone"></span><a href="tel:04137807795">04137807795</a></li><a href="tel:04137841301">
+        </a><li><a href="tel:04137841301"><span class="icon-Telephone"></span></a><a href="tel:09300565169">09300565169</a></li><a href="tel:09941196331">
+        </a><li><a href="tel:09941196331">
+            <span class="icon-Telephone"></span></a><a href="tel: 09355421165">09355421165
+               
+        </a></li><a href="tel: 09300565169">
+        </a><li><a href="tel: 09941196331"><span class="icon-Email"></span></a><a href="mailto:info@agayehoosh.com">info@atinma.com</a></li>
+        <li><span></span><a href="https://tizhossein2025abedi-dot.github.io/">ساعات کاری: 8 الی 21</a></li><a href="https://tizhossein2025abedi-dot.github.io/">
+    </a></ul><a href="https://tizhossein2025abedi-dot.github.io/">
+    <form id="_contactFrm_" class="main-footer__email-box mc-form" novalidate="novalidate">
+        <div class="main-footer__email-input-box">
+            <input style="display:none" name="Description" type="text" value="خبرنامه از صفحه اول" data-val="true" data-val-length="فیلد پیام بایستی کمتر از 300 کاراکتر باشد." data-val-length-max="300" data-val-required="فیلد توضیحات نبایستی خالی باشد" id="Description" maxlength="300">
+            <input style="display:none" name="FullName" value="--خبرنامه" type="text" data-val="true" data-val-length="فیلد نام خانوادگی بایستی کمتر از 100 کاراکتر باشد." data-val-length-max="300" data-val-required="فیلد نام نام خانوادگی نبایستی خالی باشد" id="FullName" maxlength="300">
+            <input name="MobNo_2" type="text" placeholder="شماره موبایل خود را وارد کنید" data-val="true" data-val-length="فیلد موبایل بایستی کمتر از 11 کاراکتر باشد." data-val-length-max="11" data-val-regex="شماره موبایل معتبر نمی‌باشد" data-val-regex-pattern="^09\d{9}$" data-val-required="فیلد شماره موبایل نبایستی خالی باشد" id="MobNo_2" maxlength="11" value="">
+            <span style="color:red;font-size:13px;margin-right:7px" class="validation help-block with-errors field-validation-valid" data-valmsg-for="MobNo_2" data-valmsg-replace="true"></span>
+        </div>
+        <button type="submit" class="eduact-btn" style="display:flex; justify-content:center; align-items:center;"><span class="eduact-btn__curve"></span>اشتراک</button>
+    </form>
+    <div class="mc-form__response"></div>
+</a></div><!-- /.footer-mailchimp --><a href="https://tizhossein2025abedi-dot.github.io/">
+            </a></div><a href="https://tizhossein2025abedi-dot.github.io/">
+        </a></div><!-- /.row --><a href="https://tizhossein2025abedi-dot.github.io/">
+    </a></div><!-- /.container --><a href="https://tizhossein2025abedi-dot.github.io/">
+</a></footer><!-- /.main-footer --><a href="https://tizhossein2025abedi-dot.github.io/">
+
+</a><section class="copyright text-center"><a href="https://tizhossein2025abedi-dot.github.io/">
+    </a><div class="container wow fadeInUp" data-wow-delay="400ms"><a href="https://tizhossein2025abedi-dot.github.io/">
+        </a><p class="copyright__text"><a href="https://tizhossein2025abedi-dot.github.io/">
+            طراحی شده توسط شرکت</a><a class=" " href="https://tizhossein2025abedi-dot.github.io/"> آتی نما</a>
+        </p>
+ 
+    </div><!-- /.container -->
+</section><!-- /.copyright -->
 <style>
-
-/*==========================
-FOOTER PREMIUM
-==========================*/
-
-.footer{
-
-background:#041126;
-
-padding:100px 0 35px;
-
-margin-top:120px;
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.footer::before{
-
-content:"";
-
-position:absolute;
-
-left:-180px;
-
-bottom:-180px;
-
-width:420px;
-
-height:420px;
-
-background:#ff980015;
-
-border-radius:50%;
-
-filter:blur(120px);
-
-}
-
-.footer-grid{
-
-display:grid;
-
-grid-template-columns:2fr 1fr 1fr;
-
-gap:60px;
-
-margin-bottom:55px;
-
-}
-
-.footer-logo{
-
-display:flex;
-
-align-items:center;
-
-gap:18px;
-
-margin-bottom:25px;
-
-}
-
-.footer-logo img{
-
-width:75px;
-
-height:75px;
-
-border-radius:50%;
-
-}
-
-.footer-logo h2{
-
-font-size:30px;
-
-font-weight:900;
-
-margin:0;
-
-}
-
-.footer-logo span{
-
-color:#cfcfcf;
-
-}
-
-.footer p{
-
-line-height:36px;
-
-color:#d6d6d6;
-
-}
-
-.footer h4{
-
-margin-bottom:25px;
-
-font-weight:900;
-
-}
-
-.footer ul{
-
-padding:0;
-
-margin:0;
-
-list-style:none;
-
-}
-
-.footer ul li{
-
-margin-bottom:18px;
-
-}
-
-.footer ul li a{
-
-color:#d6d6d6;
-
-transition:.3s;
-
-}
-
-.footer ul li a:hover{
-
-color:#ff9800;
-
-padding-right:8px;
-
-}
-
-.contact-item{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-margin-bottom:20px;
-
-}
-
-.contact-item i{
-
-width:48px;
-
-height:48px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-border-radius:15px;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-}
-
-.contact-item span{
-
-color:#d6d6d6;
-
-}
-
-.footer-bottom{
-
-border-top:1px solid rgba(255,255,255,.08);
-
-padding-top:25px;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-flex-wrap:wrap;
-
-gap:20px;
-
-}
-
-.footer-bottom p{
-
-margin:0;
-
-}
-
-.footer-social{
-
-display:flex;
-
-gap:12px;
-
-}
-
-.footer-social a{
-
-width:48px;
-
-height:48px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-border-radius:50%;
-
-background:rgba(255,255,255,.06);
-
-color:white;
-
-transition:.35s;
-
-}
-
-.footer-social a:hover{
-
-background:#ff9800;
-
-transform:translateY(-6px);
-
-}
-
-.top-btn{
-
-position:fixed;
-
-left:25px;
-
-bottom:25px;
-
-width:60px;
-
-height:60px;
-
-border:none;
-
-border-radius:50%;
-
-background:linear-gradient(135deg,#ff9800,#ff6500);
-
-color:#fff;
-
-font-size:22px;
-
-cursor:pointer;
-
-box-shadow:0 18px 35px rgba(255,152,0,.35);
-
-z-index:999;
-
-transition:.35s;
-
-}
-
-.top-btn:hover{
-
-transform:translateY(-8px);
-
-}
-
-@media(max-width:992px){
-
-.footer-grid{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
-}
-
-.footer-logo{
-
-justify-content:center;
-
-}
-
-.contact-item{
-
-justify-content:center;
-
-}
-
-.footer-bottom{
-
-justify-content:center;
-
-text-align:center;
-
-}
-
-}
-
-</style>
-
-<footer class="footer" id="contact">
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<div class="footer-logo">
-
-<img src="https://uploadkon.ir/uploads/20c131_26%D9%84%DA%AF%D9%88-%D8%A2%D8%AA%DB%8C-%D9%86%D9%85%D8%A7-.jpeg">
-
-<div>
-
-<h2>آکادمی آتی نما</h2>
-
-<span>Academy</span>
-
-</div>
-
-</div>
-
-<p>
-
-آکادمی آتی نما با مدیریت استاد حسین عابدی برگزارکننده دوره‌های تخصصی آمادگی آزمون تیزهوشان با آموزش مفهومی، برنامه‌ریزی حرفه‌ای و پشتیبانی آموزشی.
-
-</p>
-
-</div>
-
-<div>
-
-<h4>دسترسی سریع</h4>
-
-<ul>
-
-<li><a href="#">خانه</a></li>
-
-<li><a href="#about">درباره آکادمی</a></li>
-
-<li><a href="#courses">دوره‌ها</a></li>
-
-<li><a href="#contact">تماس با ما</a></li>
-
-<li>
-
-<a href="https://atinma-tizhoshan1391.eazm.ir/main.php" target="_blank">
-
-پروفایل استاد
-
-</a>
-
-</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4>راه‌های ارتباطی</h4>
-
-<div class="contact-item">
-
-<i class="fa-solid fa-phone"></i>
-
-<span>09300565169</span>
-
-</div>
-
-<div class="contact-item">
-
-<i class="fa-solid fa-phone"></i>
-
-<span>09941196331</span>
-
-</div>
-
-<div class="contact-item">
-
-<i class="fa-solid fa-user"></i>
-
-<span>استاد حسین عابدی</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-
-<p>
-
-© تمامی حقوق این وب‌سایت متعلق به آکادمی آتی نما می‌باشد.
-
-</p>
-
-<div class="footer-social">
-
-<a href="#"><i class="fab fa-instagram"></i></a>
-<style>
-
-/*==========================
-PRELOADER
-==========================*/
-
-#loader{
-
-position:fixed;
-
-inset:0;
-
-background:#07172F;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-flex-direction:column;
-
-z-index:999999;
-
-transition:.8s;
-
-}
-
-.loader-ring{
-
-width:90px;
-
-height:90px;
-
-border-radius:50%;
-
-border:6px solid rgba(255,255,255,.08);
-
-border-top:6px solid #ff9800;
-
-animation:spin 1s linear infinite;
-
-}
-
-.loader-text{
-
-margin-top:25px;
-
-font-size:34px;
-
-font-weight:900;
-
-letter-spacing:2px;
-
-}
-
-@keyframes spin{
-
-100%{
-
-transform:rotate(360deg);
-
-}
-
-}
-
-/*==========================
-CURSOR
-==========================*/
-
-.cursor{
-
-position:fixed;
-
-width:22px;
-
-height:22px;
-
-border-radius:50%;
-
-background:#ff9800;
-
-pointer-events:none;
-
-transform:translate(-50%,-50%);
-
-filter:blur(6px);
-
-opacity:.8;
-
-z-index:99999;
-
-}
-
-/*==========================
-FLOATING DOTS
-==========================*/
-
-.dot{
-
-position:fixed;
-
-border-radius:50%;
-
-background:rgba(255,255,255,.15);
-
-pointer-events:none;
-
-animation:float linear infinite;
-
-z-index:-1;
-
-}
-
-@keyframes float{
-
-0%{
-
-transform:translateY(0);
-
-opacity:0;
-
-}
-
-20%{
-
-opacity:1;
-
-}
-
-100%{
-
-transform:translateY(-120vh);
-
-opacity:0;
-
-}
-
-}
-
-/*==========================
-SCROLLBAR
-==========================*/
-
-::-webkit-scrollbar{
-
-width:10px;
-
-}
-
-::-webkit-scrollbar-track{
-
-background:#07172F;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-background:#ff9800;
-
-border-radius:20px;
-
-}
-
-::selection{
-
-background:#ff9800;
-
-color:white;
-
-}
-
-</style>
-
-<div id="loader">
-
-<div class="loader-ring"></div>
-
-<div class="loader-text">
-
-آتی نما
-
-</div>
-
-</div>
-
-<div class="cursor"></div>
-
-<script>
-
-/* Loader */
-
-window.onload=function(){
-
-setTimeout(()=>{
-
-loader.style.opacity="0";
-
-loader.style.visibility="hidden";
-
-},1200);
-
-};
-
-/* Cursor */
-
-const cursor=document.querySelector(".cursor");
-
-document.addEventListener("mousemove",e=>{
-
-cursor.style.left=e.clientX+"px";
-
-cursor.style.top=e.clientY+"px";
-
-});
-
-/* Floating Background */
-
-for(let i=0;i<35;i++){
-
-let d=document.createElement("span");
-
-d.className="dot";
-
-let s=Math.random()*6+2;
-
-d.style.width=s+"px";
-
-d.style.height=s+"px";
-
-d.style.left=Math.random()*100+"vw";
-
-d.style.top=Math.random()*100+"vh";
-
-d.style.animationDuration=(8+Math.random()*10)+"s";
-
-document.body.appendChild(d);
-
-}
-
-</script>
-
-<style>
-
-/*==========================
-PREMIUM EFFECTS
-==========================*/
-
-html{
-
-scroll-behavior:smooth;
-
-}
-
-body{
-
-overflow-x:hidden;
-
-}
-
-/* Scroll Progress */
-
-#progress{
-
-position:fixed;
-
-top:0;
-
-right:0;
-
-height:4px;
-
-width:0;
-
-background:linear-gradient(90deg,#ff9800,#ff6500);
-
-z-index:999999;
-
-}
-
-/* Image Hover */
-
-.teacher img,
-.about-photo img,
-.course-image img{
-
-transition:.6s;
-
-}
-
-.teacher:hover img,
-.about-photo:hover img,
-.course-card:hover img{
-
-transform:scale(1.08);
-
-}
-
-/* Buttons */
-
-.orange-btn,
-.profile-btn,
-.call-btn,
-.course-btn{
-
-transition:.35s;
-
-}
-
-.orange-btn:hover,
-.profile-btn:hover,
-.call-btn:hover,
-.course-btn:hover{
-
-box-shadow:0 20px 45px rgba(255,152,0,.35);
-
-}
-
-/* Glass */
-
-.glass{
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(20px);
-
-border:1px solid rgba(255,255,255,.08);
-
-}
-
-/* Fade */
-
-.fade-up{
-
-opacity:0;
-
-transform:translateY(40px);
-
-transition:1s;
-
-}
-
-.fade-up.show{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-</style>
-
-<div id="progress"></div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-<script>
-
-/*==========================
-Scroll Progress
-==========================*/
-
-window.addEventListener("scroll",()=>{
-
-const h=document.documentElement;
-
-const sc=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
-
-document.getElementById("progress").style.width=sc+"%";
-
-});
-
-/*==========================
-GSAP
-==========================*/
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.utils.toArray("section").forEach(sec=>{
-
-gsap.from(sec,{
-
-opacity:0,
-
-y:80,
-
-duration:1,
-
-scrollTrigger:{
-
-trigger:sec,
-
-start:"top 82%"
-
-}
-
-});
-
-});
-
-/*==========================
-Hero Animation
-==========================*/
-
-gsap.from(".hero-text",{
-
-x:-120,
-
-opacity:0,
-
-duration:1.2
-
-});
-
-gsap.from(".hero-ring",{
-
-scale:.6,
-
-opacity:0,
-
-duration:1.5
-
-});
-
-/*==========================
-Cards
-==========================*/
-
-document.querySelectorAll(".feature-card,.course-card,.student-card,.about-item").forEach(card=>{
-
-card.addEventListener("mousemove",(e)=>{
-
-const r=card.getBoundingClientRect();
-
-const x=e.clientX-r.left;
-
-const y=e.clientY-r.top;
-
-card.style.transform=
-
-`perspective(900px)
-
-rotateY(${(x-r.width/2)/20}deg)
-
-rotateX(${-(y-r.height/2)/20}deg)
-
-translateY(-8px)`;
-
-});
-
-card.addEventListener("mouseleave",()=>{
-
-card.style.transform="perspective(900px) rotateX(0) rotateY(0)";
-
-});
-
-});
-
-/*==========================
-Reveal
-==========================*/
-
-const observer=new IntersectionObserver(entries=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-}
-
-});
-
-});
-
-document.querySelectorAll(".fade-up").forEach(el=>{
-
-observer.observe(el);
-
-});
-
-/*==========================
-Console
-==========================*/
-
-console.log("%c آکادمی آتی نما","font-size:28px;color:#ff9800;font-weight:bold");
-
-console.log("%c Designed for Hossein Abedi","font-size:15px;color:#ffffff");
-
-</script>
-
-</body>
-
-</html>
-
-<a href="#"><i class="fab fa-telegram"></i></a>
-
-<a href="#"><i class="fab fa-youtube"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-</footer>
-
-<button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-
-<i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-
-AOS.init({
-
-duration:900,
-
-once:true
-
-});
-
-</script>
+    .footer-color{
+        color: #fff;
+    }
+</style>    </div><!-- /.page-wrapper -->
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler" style="color:#fff;"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="https://tizhossein2025abedi-dot.github.io/index.html" aria-label="تصویر لوگو"> <img src="1.jpg" width="75px" height="75px"></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container">
+                    <ul class="main-menu__list">
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/">صفحه اصلی</a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://tizhossein2025abedi-dot.github.io/">دوره ها<button aria-label="dropdown toggler"><i class="fa fa-angle-down"></i></button></a>
+                            <ul>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/Trainings/CourseFilter?levelGroupId=1">دوره ابتدایی</a></li>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/Trainings/CourseFilter?levelGroupId=2">دوره اول متوسطه</a></li>
+                                <li><a href="https://tizhossein2025abedi-dot.github.io/Trainings/CourseFilter?levelGroupId=5">تیزهوشان</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/Trainings/OnlineExams">آزمون ها</a>
+                        </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/Contents/AboutUs">درباره ما</a>
+                        </li>
+                            <li>
+                                <a href="https://tizhossein2025abedi-dot.github.io/UserDashboard"> پنل کاربری </a>
+                            </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/Contents/Blogs?Page=1">بلاگ</a>
+                        </li>
+                        <li>
+                            <a href="https://tizhossein2025abedi-dot.github.io/Orders/Orders">دوره های انتخاب شده</a>
+                        </li>
+                    </ul>
+                </div>
+            <!-- /.mobile-nav__container -->
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fas fa-envelope"></i>
+					<a href="mailto:needhelp@company.com"> info@atinma.com</a> 
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                   
+                    <a href="tel:09300565169">09300565169</a>
+                   
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+
+                    <a href="tel:09941196331">09941196331</a>
+
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+                <a href="https://www.instagram.com/---/"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/----"><i class="fab fa-telegram"></i></a>
+             
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+
+    <div class="search-popup searchBox">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content main-search">
+            <div class="search-popup__form">
+                <input id="input-s" type="text" class="form-control input-s" placeholder="عبارت جستجوی خود را وارد کنید..." aria-describedby="basic-addon2">
+                <button type="submit" class="eduact-btn"><span class="eduact-btn__curve"></span><i class="icon-Search"></i></button>
+            </div>
+            <div id="result" class="result" style="display: none;">
+                <ul>
+                    <!-- ko foreach: courseSearch() --><!-- /ko -->
+                    <!-- ko if: courseSearch().length == 0 -->
+                    <li style="text-align:center !important;margin-top:25px;">
+                        <a>
+                            <span class="tag">مواردی مطابق با جستجوی شما یافت نشد !</span>
+                            <br>
+                            <span style="font-size:50px;margin-top:10px;" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <!-- /ko -->
+
+                </ul>
+            </div>
+        </div>
+ 
+    </div>
+    <!-- /.search-popup -->
+    <!-- back-to-top-start -->
+    <a href="https://tizhossein2025abedi-dot.github.io/" class="scroll-top">
+        <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+        </svg>
+    </a>
+
+
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="bootstrap-select.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="jarallax.min.js"></script>
+<script src="jquery.ajaxchimp.min.js"></script>
+<script src="jquery.appear.min.js"></script>
+<script src="jquery.circle-progress.min.js"></script>
+<script src="jquery.magnific-popup.min.js"></script>
+
+<script src="nouislider.min.js"></script>
+<script src="odometer.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="wNumb.min.js"></script>
+<script src="jquery.circleType.js"></script>
+<script src="jquery.lettering.min.js"></script>
+<script src="wow.js"></script>
+<script src="isotope.js"></script>
+ 
+<script src="bootbox.min.js"></script>
+ 
+
+
+    <script>
+        $('body').on('submit', '#contactFrm', function (e) {
+            e.preventDefault();
+
+            const formData = {
+                FullName: $('#FullName').val(),
+                MobNo: $('#MobNo').val(),
+                Description: $('#Description').val(),
+                // فیلدهای دیگر را هم اضافه کن
+            };
+
+            $('.loader').show();
+
+            $.ajax({
+                url: '/Contents/ContactUs/AddNotCaptha',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                success: function (response) {
+                    toastr.success(response.Message);
+                    $("#MobNo").val("");
+                },
+                error: function (xhr) {
+                    if (xhr.responseJSON && xhr.responseJSON.Message) {
+                        toastr.error(xhr.responseJSON.Message);
+                    } else {
+                        toastr.error('خطای غیرمنتظره‌ای رخ داد.');
+                    }
+                },
+                complete: function () {
+                    $('.loader').hide();
+                }
+            });
+        });
+        $('body').on('submit', '#_contactFrm_', function (e) {
+            e.preventDefault();
+
+            const formData = {
+                FullName: $('#FullName').val(),
+                MobNo: $('#MobNo_2').val(),
+                Description: $('#Description').val(),
+                // فیلدهای دیگر را هم اضافه کن
+            };
+
+            $('.loader').show();
+
+            $.ajax({
+                url: '/Contents/ContactUs/AddNotCaptha',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                success: function (response) {
+                    toastr.success(response.Message);
+                    $("#MobNo_2").val("");
+                },
+                error: function (xhr) {
+                    if (xhr.responseJSON && xhr.responseJSON.Message) {
+                        toastr.error(xhr.responseJSON.Message);
+                    } else {
+                        toastr.error('خطای غیرمنتظره‌ای رخ داد.');
+                    }
+                },
+                complete: function () {
+                    $('.loader').hide();
+                }
+            });
+        });
+    </script>
+
+
+
+</body></html>
 
